@@ -3,6 +3,7 @@
   import Footer from '$lib/Footer.svelte';
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   export const prerender = true;
+   import SafeLink from '$lib/SafeLink.svelte';
 
 </script>
 
@@ -78,15 +79,15 @@
        <!-- Contenedor con las imágenes -->
  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center mt-12">
   
-  <a href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-105">
+  <SafeLink href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-105">
       <img src="/images/FOOTERimg/fmobil.png" alt="" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
-  </a>
+  </SafeLink>
   <a href="/FEDE-PUNTO" class="transition-transform transform hover:scale-105">
       <img src="/images/FOOTERimg/fpunto.png" alt="" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
   </a>
-  <a href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-105">
+  <SafeLink href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-105">
       <img src="/images/FOOTERimg/fred365.png" alt="" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
-  </a>
+  </SafeLink>
 </div>
     </div>
   </div>

@@ -5,6 +5,7 @@
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
   export const prerender = true;
+    import SafeLink from '$lib/SafeLink.svelte';
 
 
   let nombre = '';
@@ -95,28 +96,19 @@
       <div class="flex space-x-8">
         <!-- Facebook -->
         <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-          <a href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
-            class="text-amarillo group-hover:text-blue-600">
-            <i class="fab fa-facebook-f text-2xl"></i>
-          </a>
+        
           <img src="/images/QR/qrf.png" alt="FB" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
         </div>
     
         <!-- WhatsApp -->
         <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-          <a href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
-            class="text-amarillo group-hover:text-white">
-            <i class="fab fa-whatsapp text-2xl"></i>
-          </a>
+         
           <img src="/images/QR/qrw.png" alt="WA" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
         </div>
     
         <!-- Instagram -->
         <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-          <a href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
-            class="text-amarillo group-hover:text-pink-600">
-            <i class="fab fa-instagram text-2xl"></i>
-          </a>
+       
           <img src="/images/QR/qri.png" alt="IG" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
         </div>
       </div>
@@ -171,7 +163,7 @@
       class="inline-block text-verde hover:text-verde font-medium hover:underline transition"
     >
       📍 Ver en Google Maps
-    </a>
+  </a>
 
     <!-- Mapa embebido -->
     <div class="w-full h-64 rounded-md overflow-hidden shadow">

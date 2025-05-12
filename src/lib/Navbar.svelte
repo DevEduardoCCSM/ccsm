@@ -2,6 +2,7 @@
   let isMenuOpen = false;
   let openDropdown = null;
   let openMobileDropdown = null;
+   import SafeLink from '$lib/SafeLink.svelte';
 
   const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
@@ -107,18 +108,18 @@
   <div class="footer-social flex flex-col lg:flex-row justify-end items-start lg:items-center pr-6 space-y-10 lg:space-y-1 lg:space-x-6 h-full mt-2 lg:mt-0">
     <!-- Redes sociales -->
     <div class="flex space-x-6">
-      <a href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
+      <SafeLink href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
          class="text-verde hover:text-blue-600 transition duration-300 transform hover:scale-150">
         <i class="fab fa-facebook-f text-2xl"></i>
-      </a>
-      <a href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
+      </SafeLink>
+      <SafeLink href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
          class="text-verde hover:text-green-500 transition duration-300 transform hover:scale-150">
         <i class="fab fa-whatsapp text-2xl"></i>
-      </a>
-      <a href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
+      </SafeLink>
+      <SafeLink href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
          class="text-verde hover:text-pink-600 transition duration-300 transform hover:scale-150">
         <i class="fab fa-instagram text-2xl"></i>
-      </a>
+      </SafeLink>
     </div>
 
     <!-- Menú con dropdowns (solo visible en desktop) -->

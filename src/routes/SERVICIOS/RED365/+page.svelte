@@ -3,6 +3,7 @@
     import Footer from '$lib/Footer.svelte';
     import BotonFlotante from '$lib/BotonFlotante.svelte';
     export const prerender = true;
+    import SafeLink from '$lib/SafeLink.svelte';
 
   </script>
   
@@ -61,9 +62,9 @@
         <div class="text-verde space-y-2 text-sm sm:text-base">
             <!-- Contenedor con las imágenes -->
    <div class="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-1  justify-items-center mt-12">
-    <a href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-105">
+    <SafeLink href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-105">
         <img src="/images/FOOTERimg/fred365.png" alt="Imagen 2" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
-    </a>
+    </SafeLink>
     <h2 class="text-lg sm:text-x font-bold text-amarillo mb-2 text-center ">
       Click aqui!
      </h2>

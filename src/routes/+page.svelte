@@ -8,6 +8,7 @@
     import BotonFlotante from '$lib/BotonFlotante.svelte';
     import {  onDestroy } from 'svelte';
     export const prerender = true;
+      import SafeLink from '$lib/SafeLink.svelte';
 
     
  
@@ -79,22 +80,68 @@ import Loader from '$lib/Loader.svelte';
 </script>
 
 {#if showModal}
-<div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[1000]">
-  <div class="bg-white rounded-lg shadow-lg max-w-md w-full relative p-8">
-    <div class="flex justify-end">
-      <button on:click={closeModal} class="text-gray-500 hover:text-red-500 font-bold text-lg">✕</button>
-    </div>
-    <img src="/images/MODALimg/madre.webp" alt="" class="w-full h-auto rounded" />
-    <div class="mt-4 text-center">
-      <p class="text-xl font-bold text-verde">¡AVISO!</p>
-      <p class="text-gray-700">NUESTRO SITIO WEB NUNCA TE SOLICITARA USUARIOS Y CONTRASEÑA  <strong>NO TE DEJES ESTAFAR</strong>.</p>
-      <button class="mt-4 px-4 py-2 bg-verde text-white rounded hover:bg-amarillo hover:text-verde" on:click={closeModal}>
-        CERRAR
-      </button>
+  <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[1000] p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl relative p-4 sm:p-6">
+      <!-- Botón de cierre -->
+      <div class="flex justify-end">
+        <button 
+          on:click={closeModal} 
+          class="text-gray-500 hover:text-red-500 font-bold text-2xl sm:text-lg"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- Contenedor de tarjetas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-4">
+        <!-- Tarjeta 1 -->
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
+          <img 
+            src="/images/MODALimg/contador.jpg" 
+            alt="" 
+            class="w-full h-40 sm:h-48 object-contain" 
+          />
+          <div class="p-3 sm:p-4 text-center">
+            <p class="text-lg sm:text-xl font-bold text-verde">¡AVISO!</p>
+            <p class="text-gray-700 mt-2 text-sm sm:text-base">
+              Felicidades contadores!
+              <strong>Este 17 de mayo celebraremos el día del contador</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
+          <img 
+            src="/images/MODALimg/estafa.jpg" 
+            alt="" 
+            class="w-full h-40 sm:h-48 object-cover" 
+          />
+          <div class="p-3 sm:p-4 text-center">
+            <p class="text-lg sm:text-xl font-bold text-verde">
+              TU SEGURIDAD ES NUESTRA PRIORIDAD
+            </p>
+            <p class="text-gray-700 mt-2 text-sm sm:text-base">
+              <strong>NUESTRO SITIO WEB NUNCA TE SOLICITARÁ USUARIO Y CONTRASEÑAS. NO TE DEJES ESTAFAR!</strong>
+              Si tienes dudas, contacta con nosotros directamente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botón de cerrar -->
+      <div class="mt-6 text-center">
+        <button 
+          class="px-6 py-2 bg-verde text-white rounded hover:bg-amarillo hover:text-verde text-sm sm:text-base" 
+          on:click={closeModal}
+        >
+          CERRAR
+        </button>
+      </div>
     </div>
   </div>
-</div>
 {/if}
+
 
 {#if isNavigating}
   <Loader />
@@ -464,29 +511,29 @@ import Loader from '$lib/Loader.svelte';
   
   <!-- Contenedor de los botones -->
   <div class="w-full lg:w-1/3 flex flex-col justify-center items-center space-y-4">
-    <a href="https://www.fedecredito.com.sv/promociones" target="_blank" class="w-full">
+    <SafeLink href="https://www.fedecredito.com.sv/promociones" target="_blank" class="w-full">
       <button class="w-full bg-verde text-white hover:bg-amarillo hover:text-verde transition-all p-4 rounded-md text-base sm:text-lg font-semibold hover:scale-105">
         <i class="fas fa-smile mr-2"></i>PROMOCIONES
       </button>
-    </a>
+    </SafeLink>
 
-    <a href="https://fedebanking.sistemafedecredito.com/" target="_blank" class="w-full">
+    <SafeLink href="https://fedebanking.sistemafedecredito.com/" target="_blank" class="w-full">
       <button class="w-full bg-verde text-white hover:bg-amarillo hover:text-verde transition-all p-4 rounded-md text-base sm:text-lg font-semibold hover:scale-105">
         <i class="fas fa-mobile-alt mr-2"></i>FEDEBANKING
       </button>
-    </a>
+    </SafeLink>
 
-    <a href="https://www.sistemafedecredito.com/WEBREPCOMPRA/ReportarCompra.aspx" target="_blank" class="w-full">
+    <SafeLink href="https://www.sistemafedecredito.com/WEBREPCOMPRA/ReportarCompra.aspx" target="_blank" class="w-full">
       <button class="w-full bg-verde text-white hover:bg-amarillo hover:text-verde transition-all p-4 rounded-md text-base sm:text-lg font-semibold hover:scale-105">
         <i class="fas fa-gift mr-2"></i>REPORTA TU COMPRA
       </button>
-    </a>
+    </SafeLink>
 
-    <a href="https://www.fedecredito.com.sv/productos/tarjetas/reporte-de-viaje" target="_blank" class="w-full">
+    <SafeLink href="https://www.fedecredito.com.sv/productos/tarjetas/reporte-de-viaje" target="_blank" class="w-full">
       <button class="w-full bg-verde text-white hover:bg-amarillo hover:text-verde transition-all p-4 rounded-md text-base sm:text-lg font-semibold hover:scale-105">
         <i class="fas fa-plane mr-2"></i>REPORTA TU VIAJE
       </button>
-    </a>
+    </SafeLink>
   </div>
 
   <!-- Imagen -->

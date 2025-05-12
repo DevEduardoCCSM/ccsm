@@ -3,6 +3,7 @@
   import Footer from '$lib/Footer.svelte';
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   export const prerender = true;
+  import SafeLink from '$lib/SafeLink.svelte';
 
 </script>
 
@@ -86,9 +87,9 @@
       </div>
        <!-- Contenedor con las imágenes -->
  <div class="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-1  justify-items-center mt-12">
-  <a href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-105">
+  <SafeLink href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-105">
       <img src="/images/FOOTERimg/fmobil.png" alt="" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
-  </a>
+  </SafeLink>
   <h2 class="text-lg sm:text-x font-bold text-amarillo mb-2 text-center ">
     Click aqui!
    </h2>
@@ -102,7 +103,7 @@
 
     <div class="grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 gap-1 justify-items-center">
       <!-- App Store -->
-      <a
+      <SafeLink
         href="https://apps.apple.com/us/app/fede-m%C3%B3vil/id1077370776"
         target="_blank"
         rel="noopener noreferrer"
@@ -117,10 +118,10 @@
             loading="lazy"
           />
         </figure>
-      </a>
+      </SafeLink>
 
       <!-- Google Play -->
-      <a
+      <SafeLink
         href="https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil&hl=en"
         target="_blank"
         rel="noopener noreferrer"
@@ -135,7 +136,7 @@
             loading="lazy"
           />
         </figure>
-      </a>
+      </SafeLink>
     </div>
   </div>
 </section>

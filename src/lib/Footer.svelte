@@ -1,5 +1,5 @@
 <script>
-    // Aquí puedes agregar alguna lógica de Svelte si es necesario
+   import SafeLink from '$lib/SafeLink.svelte';
 </script>
 
 <!-- Pie de página -->
@@ -38,58 +38,58 @@
         <div class="footer-social flex flex-col items-center">
             <h4 class="font-bold text-xl mb-4 text-amarillo">SIGUENOS</h4>
             <div class="flex space-x-6 mb-6 justify-center">
-                <a
+                <SafeLink
                     href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA"
                     target="_blank"
                     aria-label="Facebook"
                     class="text-white hover:text-blue-600 transition duration-300 transition-transform transform hover:scale-125"
                 >
                     <i class="fab fa-facebook-f text-2xl"></i>
-                </a>
+                </SafeLink>
 
-                <a
+                <SafeLink
                     href="https://wa.me/50377424422"
                     target="_blank"
                     aria-label="WhatsApp"
                     class="text-white hover:text-green-500 transition duration-300 transition-transform transform hover:scale-125"
                 >
                     <i class="fab fa-whatsapp text-2xl"></i>
-                </a>
+                </SafeLink>
 
-                <a
+                <SafeLink
                     href="https://www.instagram.com/Cajasanmartin/"
                     target="_blank"
                     aria-label="Instagram"
                     class="text-white hover:text-pink-600 transition duration-300 transition-transform transform hover:scale-125"
                 >
                     <i class="fab fa-instagram text-2xl"></i>
-                </a>
+                </SafeLink>
             </div>
 
             <!-- Contenedor con las imágenes -->
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
-                <a href="https://www.fedecredito.com.sv/promociones" target="_blank" class="transition-transform transform hover:scale-125">
+                <SafeLink href="https://www.fedecredito.com.sv/promociones" target="_blank" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/fedepuntos.png" alt="Imagen 1" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
-                </a>
-                <a href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-125">
+                </SafeLink>
+                <SafeLink href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/fmobil.png" alt="Imagen 2" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
-                </a>
+                </SafeLink>
                 <a href="/FEDE-PUNTO" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/fpunto.png" alt="Imagen 3" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
                 </a>
-                <a href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-125">
+                <SafeLink href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/fred365.png" alt="Imagen 4" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
-                </a>
+                </SafeLink>
             </div>
 
             <!-- Contenedor con las imágenes descarga de app -->
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
-                <a href="https://apps.apple.com/us/app/fede-m%C3%B3vil/id1077370776" target="_blank" class="transition-transform transform hover:scale-125">
+                <SafeLink href="https://apps.apple.com/us/app/fede-m%C3%B3vil/id1077370776" target="_blank" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/app-store.webp" alt="Imagen 1" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil&hl=en" target="_blank" class="transition-transform transform hover:scale-125">
+                </SafeLink>
+                <SafeLink href="https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil&hl=en" target="_blank" class="transition-transform transform hover:scale-125">
                     <img src="/images/FOOTERimg/google-store.webp" alt="Imagen 4" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
-                </a>
+                </SafeLink>
             </div>
         </div>
     </div>
