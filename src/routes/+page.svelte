@@ -87,7 +87,7 @@ import Loader from '$lib/Loader.svelte';
     <img src="/images/MODALimg/madre.webp" alt="" class="w-full h-auto rounded" />
     <div class="mt-4 text-center">
       <p class="text-xl font-bold text-verde">¡AVISO!</p>
-      <p class="text-gray-700">Feliz dia de la madre!  <strong>Estaremos fuera de labores  10 de Mayo.</strong>.</p>
+      <p class="text-gray-700">NUESTRO SITIO WEB NUNCA TE SOLICITARA USUARIOS Y CONTRASEÑA  <strong>NO TE DEJES ESTAFAR</strong>.</p>
       <button class="mt-4 px-4 py-2 bg-verde text-white rounded hover:bg-amarillo hover:text-verde" on:click={closeModal}>
         CERRAR
       </button>
