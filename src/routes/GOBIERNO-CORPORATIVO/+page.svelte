@@ -149,5 +149,103 @@
   </div>
 </div>
 
+<section class="max-w-5xl mx-auto p-6 bg-white shadow-md rounded-md text-center">
+  <h2 class="text-2xl font-bold mb-6 text-verde">Nómina de Junta Directiva y Alta Gerencia</h2>
+
+  <!-- Junta Directiva -->
+  <div class="mb-10">
+    <h3 class="text-xl font-semibold mb-3 text-verde">Junta Directiva</h3>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-verde">
+        <thead class="bg-verde text-white">
+          <tr>
+            <th class="border border-green-700 px-4 py-2 text-left">Nombre</th>
+            <th class="border border-green-700 px-4 py-2 text-left">Cargo</th>
+            <th class="border border-green-700 px-4 py-2 text-left">Período</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Jose Mauricio Rodriguez Flores</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Director Presidente</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Mauricio Antonio Callejas</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Director Secretario</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Luisa Arcadia Serrano Castro</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Directora Propietaria</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Jose Antonio Rosales Grande</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Primer Director Suplente</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Maria Esperanza Mendez de Diaz</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Segunda Directora Suplente</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Juan Antonio Rodriguez Platero</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Tercer Director Suplente</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">2024-2029</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Alta Gerencia -->
+  <div>
+    <h3 class="text-xl font-semibold mb-3 text-verde">Alta Gerencia</h3>
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-verde">
+        <thead class="bg-verde text-white">
+          <tr>
+            <th class="border border-green-700 px-4 py-2 text-left">Nombre</th>
+            <th class="border border-green-700 px-4 py-2 text-left">Cargo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Juan Ovidio Hernández Palacios</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gerente General</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Marta Luz Leon de Quinteros</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gerente de Negocios</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Julio Cesar Vasquez Mejia</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gerente Financiero</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gladis Marisol Hernandez Guevara</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gerente Administrativa</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Claudia Beatriz Jovel</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Auditora Interna</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Edwin Alexander Benitez Mejia</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Administrador de Riesgos</td>
+          </tr>
+          <tr class="hover:bg-yellow-100">
+            <td class="border border-green-400 px-4 py-2 text-green-800">Mario Cesar Mijango Martinez</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Oficial de Cumplimiento</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
 <Footer />
 <slot />
