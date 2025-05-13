@@ -2,152 +2,159 @@
   import Navbar from '$lib/Navbar.svelte';
   import Footer from '$lib/Footer.svelte';
   import BotonFlotante from '$lib/BotonFlotante.svelte';
-  import { fade, fly } from 'svelte/transition'; // Importa las transiciones
+  import { fade, fly } from 'svelte/transition';
 
   export const prerender = true;
 
+  let mostrarEstadosFinancieros = false;
+  let mostrarInformeGobierno = false;
+
+ 
 </script>
 
 <Navbar />
 <slot />
-<main class="mt-4">
-  <!-- Aquí va el contenido de la página -->
-</main>
+<main class="mt-4"></main>
 <slot />
 <BotonFlotante />
-<style>
 
-</style>
-
-<div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-12">
-  <!-- Fondo dividido en 3 colores -->
+<div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-12 relative z-0">
+  <!-- Fondo -->
   <div class="w-full h-full absolute top-0 left-0 right-0 z-0">
     <div class="w-full h-1/3 bg-gradient-to-b from-verde to-[#C8FF96]"></div>
     <div class="w-full h-2/3 bg-gradient-to-b from-[#388E3C] to-[#81C784]"></div>
     <div class="w-full h-1/3 bg-[var(--color-blanco)]"></div>
   </div>
 
-
   <div class="max-w-4xl w-full bg-white shadow-lg rounded-lg p-8 mt-16 z-10">
-    <!-- Cuadro para la imagen -->
-    <div class="relative pt-1">
-     
-    </div>
+    <!-- Imagen -->
     <div class="w-full h-56 sm:h-64 md:h-72 bg-gray-300 rounded-lg mb-6">
-      <img src="images/gobiernoBG.png" alt="" class="w-full h-full object-cover rounded-lg"/>
+      <img src="images/gobiernoBG.png" alt="" class="w-full h-full object-cover rounded-lg" />
     </div>
 
-    <!-- Contenedor para la información -->
+    <!-- Título -->
     <div class="gov-container p-4" in:fade={{ duration: 500 }}>
       <h1 class="text-verde text-center text-2xl sm:text-3xl font-bold" in:fly={{ y: -50, duration: 800 }}>
         Transparencia y Cumplimiento a las Normas de Gobierno Corporativo.
       </h1>
 
-      <!-- Barra de progreso -->
+      <!-- Barra -->
       <div class="relative pt-1 mb-4">
         <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-amarillo">
           <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-amarillo"></div>
         </div>
       </div>
 
-      <!-- Grid de documentos -->
+      <!-- Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Documento corporativo 1 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
-          <a href="/pdfs/codigo de gobierno corporativo.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>  
-            Codigo de Gobierno Corporativo
-          </a>
-        </div>
 
-        <!-- Documento corporativo 2 -->
-        <div class="grid-item bg-amarillo
-        
-         text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
+     
+
+        <!-- Otros documentos -->
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
           <a href="/pdfs/pacto.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>  
+            <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
             Pacto Social
           </a>
         </div>
 
-        <!-- Documento corporativo 3 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
           <a href="/pdfs/memoria2024.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-calendar text-4xl mb-2 text-amarillo"></i>  
+            <i class="fas fa-calendar text-4xl mb-2 text-amarillo"></i>
             Memoria de Labores
           </a>
         </div>
 
-        <!-- Documento corporativo 4 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
           <a href="/pdfs/etica.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-users text-4xl mb-2 text-amarillo"></i>  
-            Codigo de Etica 
+            <i class="fas fa-users text-4xl mb-2 text-amarillo"></i>
+            Código de Ética
           </a>
         </div>
 
-        <!-- Documento corporativo 5 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
-          <a href="/pdfs/informe-gobierno.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-flag text-4xl mb-2 text-amarillo"></i>  
-            Informe de Gobierno
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+          <a href="/pdfs/codigo de gobierno corporativo.pdf" target="_blank" class="text-inherit flex flex-col items-center">
+            <i class="fas fa-flag text-4xl mb-2 text-amarillo"></i>
+          Codigo de Gobierno Corporativo
           </a>
         </div>
 
-        <!-- Documento corporativo 6 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
           <a href="/pdfs/Estado financiero 1.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>  
+            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
             Estados Financieros
           </a>
         </div>
 
-        <!-- Documento corporativo 6 -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-          in:fly={{ y: 50, duration: 600 }}>
-          <a href="/pdfs/Estado financiero 1.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <!-- Ícono de FontAwesome -->
-            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>  
-            pendiente
+        <!-- Pendientes -->
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+          <a href="#" target="_blank" class="text-inherit flex flex-col items-center">
+            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
+            Pendiente
           </a>
         </div>
 
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+          <a href="#" target="_blank" class="text-inherit flex flex-col items-center">
+            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
+            Pendiente
+          </a>
+        </div>
 
-      <!-- Documento corporativo 6 -->
-      <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-      in:fly={{ y: 50, duration: 600 }}>
-      <a href="/pdfs/Estado financiero 1.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-        <!-- Ícono de FontAwesome -->
-        <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>  
-      pendiente
-      </a>
+        <!-- ✅ BOTÓN DESPLEGABLE ESTADO FINANCIEROS -->
+<div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+  <button
+    on:click={() => (mostrarEstadosFinancieros = !mostrarEstadosFinancieros)}
+    class="w-full flex flex-col items-center focus:outline-none"
+  >
+    <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
+    Estados Financieros
+    <span class="text-sm mt-2">{mostrarEstadosFinancieros ? '▲ Ocultar' : '▼ Ver años'}</span>
+  </button>
+
+  <div
+    class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
+    style="max-height: {mostrarEstadosFinancieros ? '300px' : '0px'}"
+  >
+    <div class="flex flex-col items-center space-y-1 py-2">
+      <a href="/pdfs/codigo-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+      <a href="/pdfs/codigo-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+      <a href="/pdfs/codigo-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
     </div>
-
-    <!-- Documento corporativo 6 -->
-    <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-    in:fly={{ y: 50, duration: 600 }}>
-    <a href="/pdfs/Estado financiero 1.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-      <!-- Ícono de FontAwesome -->
-      <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>  
-      pendiente
-    </a>
   </div>
+</div>
+
+
+ <!-- ✅ BOTÓN DESPLEGABLE CODIGOS CORPORATIVOS -->
+<div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+  <button
+    on:click={() => (mostrarInformeGobierno = !mostrarInformeGobierno)}
+    class="w-full flex flex-col items-center focus:outline-none"
+  >
+    <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>
+    Informe de Gobierno
+    <span class="text-sm mt-2">{mostrarInformeGobierno ? '▲ Ocultar' : '▼ Ver años'}</span>
+  </button>
+
+  <div
+    class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
+    style="max-height: {mostrarInformeGobierno ? '300px' : '0px'}"
+  >
+    <div class="flex flex-col items-center space-y-1 py-2">
+      <a href="/pdfs/informe-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+      <a href="/pdfs/informe-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+      <a href="/pdfs/informe-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+    </div>
+  </div>
+</div>
+
+
       </div>
     </div>
   </div>
 </div>
+
+
 
 <section class="max-w-5xl mx-auto p-6 bg-white shadow-md rounded-md text-center">
   <h2 class="text-2xl font-bold mb-6 text-verde">Nómina de Junta Directiva y Alta Gerencia</h2>
@@ -225,7 +232,7 @@
             <td class="border border-green-400 px-4 py-2 text-green-800">Gerente Financiero</td>
           </tr>
           <tr class="hover:bg-yellow-100">
-            <td class="border border-green-400 px-4 py-2 text-green-800">Gladis Marisol Hernandez Guevara</td>
+            <td class="border border-green-400 px-4 py-2 text-green-800">Gladis Marisol Hernández Guevara</td>
             <td class="border border-green-400 px-4 py-2 text-green-800">Gerente Administrativa</td>
           </tr>
           <tr class="hover:bg-yellow-100">

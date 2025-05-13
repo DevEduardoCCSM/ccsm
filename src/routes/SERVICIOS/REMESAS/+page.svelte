@@ -51,34 +51,37 @@
           <span class="font-semibold">SISTEMA FEDECRÉDITO</span>, por medio de:
         </p>
         <ul class="list-disc list-inside space-y-1">
-          <li><span class="font-semibold">Girosol</span></li>
-          <li><span class="font-semibold">La Nacional</span></li>
-          <li><span class="font-semibold">Delgado Travel</span></li>
-          <li><span class="font-semibold">Amigo Envío</span></li>
-          <li><span class="font-semibold">A La Internacional</span></li>
-          <li><span class="font-semibold">BARRI</span></li>
-          <li><span class="font-semibold">Mateo Express</span></li>
-          <li><span class="font-semibold">VIGO</span></li>
-          <li><span class="font-semibold">MONEYGRAM</span></li>
-          <li><span class="font-semibold">RÍA</span></li>
-          <li><span class="font-semibold">Uniteller</span></li>
-          <li><span class="font-semibold">Unigram</span></li>
-          <li><span class="font-semibold">Remesas y pagos Cusca</span></li>
-          <li><span class="font-semibold">RYT</span></li>
+        <li><span class="font-semibold">A La Internacional</span></li>
+<li><span class="font-semibold">Amigo Envío</span></li>
+<li><span class="font-semibold">BARRI</span></li>
+<li><span class="font-semibold">Delgado Travel</span></li>
+<li><span class="font-semibold">Girosol</span></li>
+<li><span class="font-semibold">La Nacional</span></li>
+<li><span class="font-semibold">Mateo Express</span></li>
+<li><span class="font-semibold">MONEYGRAM</span></li>
+<li><span class="font-semibold">Remesas y pagos Cusca</span></li>
+<li><span class="font-semibold">RÍA</span></li>
+<li><span class="font-semibold">RYT</span></li>
+<li><span class="font-semibold">Uniteller</span></li>
+<li><span class="font-semibold">Unigram</span></li>
+<li><span class="font-semibold">VIGO</span></li>
+<li><span class="font-semibold">XOOM</span></li>
+
         </ul>
         <p class="mt-4">
           O si lo prefieres <span class="font-semibold">DIRECTAMENTE EN TU CUENTA DE AHORROS</span> por medio de:
         </p>
         <ul class="list-disc list-inside space-y-1 mt-2">
-          <li><span class="font-semibold">Giromex</span></li>
-          <li><span class="font-semibold">Trans-Fast</span></li>
-          <li><span class="font-semibold">Wells Fargo</span></li>
-          <li><span class="font-semibold">Mateo Express</span></li>
-          <li><span class="font-semibold">UNO Envíos de dinero</span></li>
-          <li><span class="font-semibold">BANCOMER</span></li>
-          <li><span class="font-semibold">Sigue</span></li>
-          <li><span class="font-semibold">Dolex</span></li>
-          <li><span class="font-semibold">Intermex</span></li>
+         <li><span class="font-semibold">BANCOMER</span></li>
+<li><span class="font-semibold">Dolex</span></li>
+<li><span class="font-semibold">Giromex</span></li>
+<li><span class="font-semibold">Intermex</span></li>
+<li><span class="font-semibold">Mateo Express</span></li>
+<li><span class="font-semibold">Sigue</span></li>
+<li><span class="font-semibold">Trans-Fast</span></li>
+<li><span class="font-semibold">UNO Envíos de dinero</span></li>
+<li><span class="font-semibold">Wells Fargo</span></li>
+
         </ul>
       </div>
     </div>

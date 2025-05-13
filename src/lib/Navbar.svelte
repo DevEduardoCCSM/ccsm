@@ -2,7 +2,7 @@
   let isMenuOpen = false;
   let openDropdown = null;
   let openMobileDropdown = null;
-   import SafeLink from '$lib/SafeLink.svelte';
+  import SafeLink from '$lib/SafeLink.svelte';
 
   const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
@@ -21,7 +21,7 @@
   };
 
   const dropdownItems = {
-    SERVICIOS : [
+    SERVICIOS: [
       { text: 'Remesas', href: '/SERVICIOS/REMESAS' },
       { text: 'Colecturias', href: '/SERVICIOS/COLECTURIAS' },
       { text: 'Salud', href: '/SERVICIOS/SALUD' },
@@ -41,7 +41,7 @@
   };
 </script>
 
-<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md z-50">
+<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md z-50 ">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">
@@ -49,7 +49,7 @@
       </a>
 
       <!-- Desktop Menu -->
-      <ul class="hidden lg:flex divide-x divide-black text-sm font-semibold tracking-wide">
+      <ul class="hidden lg:flex   divide-x divide-black text-sm font-semibold ">
         <li class="px-4"><a href="/GOBIERNO-CORPORATIVO" class="hover:text-green-700 transition">Gobierno Corporativo</a></li>
         <li class="px-4"><a href="/AGENCIAS" class="hover:text-green-700 transition">Agencias</a></li>
         <li class="px-4"><a href="/FEDE-PUNTO" class="hover:text-green-700 transition">Fede Punto Vecino</a></li>
@@ -101,50 +101,63 @@
           </li>
         {/each}
       </ul>
+
+      <!-- Redes sociales para móviles -->
+      <div class="mt-6 flex justify-center space-x-6">
+        <SafeLink href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
+          class="text-verde hover:text-blue-600 transition duration-300 transform hover:scale-150">
+          <i class="fab fa-facebook-f text-2xl"></i>
+        </SafeLink>
+        <SafeLink href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
+          class="text-verde hover:text-green-500 transition duration-300 transform hover:scale-150">
+          <i class="fab fa-whatsapp text-2xl"></i>
+        </SafeLink>
+        <SafeLink href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
+          class="text-verde hover:text-pink-600 transition duration-300 transform hover:scale-150">
+          <i class="fab fa-instagram text-2xl"></i>
+        </SafeLink>
+      </div>
     </div>
   {/if}
 
-  <!-- Footer social + Desktop dropdowns -->
-  <div class="footer-social flex flex-col lg:flex-row justify-end items-start lg:items-center pr-6 space-y-10 lg:space-y-1 lg:space-x-6 h-full mt-2 lg:mt-0">
-    <!-- Redes sociales -->
-    <div class="flex space-x-6">
-      <SafeLink href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
-         class="text-verde hover:text-blue-600 transition duration-300 transform hover:scale-150">
-        <i class="fab fa-facebook-f text-2xl"></i>
-      </SafeLink>
-      <SafeLink href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
-         class="text-verde hover:text-green-500 transition duration-300 transform hover:scale-150">
-        <i class="fab fa-whatsapp text-2xl"></i>
-      </SafeLink>
-      <SafeLink href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
-         class="text-verde hover:text-pink-600 transition duration-300 transform hover:scale-150">
-        <i class="fab fa-instagram text-2xl"></i>
-      </SafeLink>
-    </div>
-
-    <!-- Menú con dropdowns (solo visible en desktop) -->
-    <ul class="hidden lg:flex flex-row items-start space-x-2 text-left">
-      {#each Object.keys(dropdownItems) as title}
-        <li class="relative">
-          <button
-            on:click={() => toggleDropdown(title)}
-            class="px-12 py-1 text-verde hover:text-verde transition"
-          >
-            {title}
-          </button>
-          {#if openDropdown === title}
-            <ul class="absolute mt-0 w-48 bg-white shadow-lg border rounded right-0 z-10">
-              {#each dropdownItems[title] as item}
-                <li class="border-b border-gray-200 last:border-none">
-                  <a href={item.href} class="block px-4 py-2 text-gray-700 hover:bg-green-100 hover:text-green-700 transition">
-                    {item.text}
-                  </a>
-                </li>
-              {/each}
-            </ul>
-          {/if}
-        </li>
-      {/each}
-    </ul>
+  <!-- Redes sociales (solo visible en escritorio) -->
+  <div class="footer-social hidden lg:flex flex-row justify-end items-center pr-60 space-x-6 mt-2 tracking-wide">
+    <SafeLink href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
+      class="text-verde hover:text-blue-600 transition duration-300 transform hover:scale-150">
+      <i class="fab fa-facebook-f text-2xl"></i>
+    </SafeLink>
+    <SafeLink href="https://wa.me/50377424422" target="_blank" aria-label="WhatsApp"
+      class="text-verde hover:text-green-500 transition duration-300 transform hover:scale-150">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </SafeLink>
+    <SafeLink href="https://www.instagram.com/Cajasanmartin/" target="_blank" aria-label="Instagram"
+      class="text-verde hover:text-pink-600 transition duration-300 transform hover:scale-150">
+      <i class="fab fa-instagram text-2xl"></i>
+    </SafeLink>
   </div>
+
+  <!-- Menú con dropdowns (solo visible en desktop) -->
+  <ul class="hidden lg:flex flex-row items-start justify-end  space-x-2 text-left tracking-wide">
+    {#each Object.keys(dropdownItems) as title}
+      <li class="relative">
+        <button
+          on:click={() => toggleDropdown(title)}
+          class="px-12 py-1 text-verde hover:text-verde transition"
+        >
+          {title}
+        </button>
+        {#if openDropdown === title}
+          <ul class="absolute mt-0 w-48 bg-white shadow-lg border rounded right-0 z-10">
+            {#each dropdownItems[title] as item}
+              <li class="border-b border-gray-200 last:border-none">
+                <a href={item.href} class="block px-4 py-2 text-gray-700 hover:bg-green-100 hover:text-green-700 transition">
+                  {item.text}
+                </a>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+      </li>
+    {/each}
+  </ul>
 </nav>

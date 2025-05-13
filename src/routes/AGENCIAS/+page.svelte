@@ -2,7 +2,7 @@
   import Navbar from '$lib/Navbar.svelte';
   import Footer from '$lib/Footer.svelte';
   import { onMount } from 'svelte';
-  import { fade, fly } from 'svelte/transition'; // Importa las transiciones
+  import { fade, fly } from 'svelte/transition'; 
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   export const prerender = true;
 
@@ -22,7 +22,7 @@
       direccion: "Unicentro Altavista, locales 7F y 8F, San Bartolo Ilopango",
       contacto: "+503 2299-7279",
       image: "/images/AGENCIAimg/alta.jpg",
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.234541499695!2d-89.05795152617554!3d13.735186497680438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63462cd8ed7a33%3A0xef454fa71ebaf225!2sCaja%20de%20Cr%C3%A9dito%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1743268918128!5m2!1ses!2ssv",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.481346978648!2d-89.09986372617591!3d13.716287198117286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6337fcd02f8869%3A0x61685bbe7bf3d208!2sCaja%20De%20Credito%20San%20Martin!5e1!3m2!1ses!2ssv!4v1747164079989!5m2!1ses!2ssv",
     },
   ];
 
