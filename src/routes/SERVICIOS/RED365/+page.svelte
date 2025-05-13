@@ -21,7 +21,7 @@
     <h2 class="text-2xl sm:text-3xl font-bold text-amarillo mb-2 sm:mb-4">
       FEDE RED 365
     </h2>
-    <p class="text-sm sm:text-base whitespace-pre-line text-white">
+    <p class="text-sm sm:text-base whitespace-pre-line text-white text-justify">
       Realiza tus operaciones financieras las 24 horas del día en nuestra red de cajeros automático FEDE RED 365, encuéntralos en todo el país, y realiza las siguientes operaciones financieras de forma rápida y segura.
     </p>
   </div>

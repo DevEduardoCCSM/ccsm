@@ -86,32 +86,46 @@
   </div>
 </div>
 
-   <!-- Tarjetas de contacto -->
+ <!-- Tarjetas de contacto -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl w-full z-10 mb-12">
   <!-- Columna izquierda -->
   <div class="space-y-6">
     <!-- Redes sociales -->
-    <div class="bg-verde p-11 rounded-lg shadow-md flex items-center gap-6">
-      <!-- Contenedor de iconos con sus imágenes debajo -->
-      <div class="flex space-x-8">
-        <!-- Facebook -->
-        <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-        
-          <img src="/images/QR/qrf.png" alt="FB" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
-        </div>
-    
-        <!-- WhatsApp -->
-        <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-         
-          <img src="/images/QR/qrw.png" alt="WA" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
-        </div>
-    
-        <!-- Instagram -->
-        <div class="flex flex-col items-center group transition duration-300 transform hover:scale-150">
-       
-          <img src="/images/QR/qri.png" alt="IG" class="w-20 h-20 mt-1 opacity-80 group-hover:opacity-100" />
-        </div>
+    <div class="bg-verde p-6 sm:p-8 md:p-11 rounded-lg shadow-md flex flex-wrap justify-center items-center gap-8">
+      <!-- Íconos de redes sociales -->
+      <!-- Facebook -->
+      <div class="flex flex-col items-center group transition duration-300 transform hover:scale-110">
+        <img 
+          src="/images/QR/qrf.png" 
+          alt="FB" 
+          class="w-20 h-20 sm:w-24 sm:h-24 object-contain opacity-80 group-hover:opacity-100" 
+        />
       </div>
+
+      <!-- WhatsApp -->
+      <div class="flex flex-col items-center group transition duration-300 transform hover:scale-110">
+        <img 
+          src="/images/QR/qrw.png" 
+          alt="WA" 
+          class="w-20 h-20 sm:w-24 sm:h-24 object-contain opacity-80 group-hover:opacity-100" 
+        />
+      </div>
+
+      <!-- Instagram -->
+      <div class="flex flex-col items-center group transition duration-300 transform hover:scale-110">
+        <img 
+          src="/images/QR/qri.png" 
+          alt="IG" 
+          class="w-20 h-20 sm:w-24 sm:h-24 object-contain opacity-80 group-hover:opacity-100" 
+        />
+      
+
+
+      </div>
+ 
+
+
+
     
       <!-- Texto -->
      
@@ -150,10 +164,23 @@
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-100 rounded-lg shadow-lg p-8 max-w-5xl w-full z-10">
   <!-- Columna izquierda: texto + mapa -->
   <div class="space-y-4">
-    <h2 class="text-2xl font-semibold text-verde">AGENCIA CENTRAL CAJA CREDITO SAN MARTIN</h2>
-    <p class="text-gray-700">
-      Nuestra Agencia Central está ubicada en Edif. Juan Ovidio Hernández Palacios, Final Av. Morazán km 18, San Martín, San Salvador, CP 1129. Puedés encontrarnos en la siguiente dirección:
-    </p>
+ <script>
+  // Aquí puedes agregar cualquier lógica adicional si es necesario
+</script>
+
+<section class=" bg-gray-100 rounded-lg ">
+  <h2 class="text-2xl font-semibold text-verde mb-6">
+    AGENCIA CENTRAL CAJA CREDITO SAN MARTIN
+  </h2>
+  <p class="text-verde mb-4">
+    Nuestra <strong>Agencia Central</strong> se encuentra en la siguiente dirección:
+  </p>
+  <address class="text-verde mb-4 text-justify">
+    <p><strong>Dirección:</strong> Edificio Juan Ovidio Hernández Palacios, Final Av. Morazán km 18, San Martín, San Salvador, CP 1129.</p>
+    <p><strong>Horario de Atención:</strong> Lunes a Viernes de 7:30 AM a 4:30 PM. Sabado de 7:30 AM a 12:00 PM</p>
+  </address>
+  
+</section>
 
     <!-- Enlace para abrir mapa en nueva pestaña -->
     <a

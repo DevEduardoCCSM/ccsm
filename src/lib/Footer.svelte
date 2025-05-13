@@ -17,22 +17,47 @@
                 <p>r.social@ccsmartin.com.sv</p>
             </div>
             <a href="/">
-                <img src="/images/logo.png" alt="Logo Empresa" class="logo-image h-12 transition-transform transform hover:scale-105" loading="lazy"/>
+                <img src="/images/logo.png" alt="Logo Empresa" class="logo-image h-12 transition-transform transform" loading="lazy"/>
             </a>
         </div>
 
-        <!-- Grid 2: Enlaces -->
-        <div class="footer-links flex flex-col items-center">
-            <h4 class="font-bold text-xl mb-4 text-amarillo">INFORMACIÓN</h4>
-            <ul class="space-y-2">
-                <li><a href="/PRODUCTOS/TARJETA-DEBITO" class="text-white hover:text-yellow-300 transition duration-300">Tarjetas</a></li>
-                <li><a href="/AGENCIAS" class="text-white hover:text-yellow-300 transition duration-300">Sucursales</a></li>
-                <li><a href="/PRODUCTOS/AHORROS" class="text-white hover:text-yellow-300 transition duration-300">Ahorros</a></li>
-                <li><a href="/CREDITOS/CREDITO-PERSONAL" class="text-white hover:text-yellow-300 transition duration-300">Créditos</a></li>
-                <li><a href="/NOSOTROS" class="text-white hover:text-yellow-300 transition duration-300">Nosotros</a></li>
-                <li><a href="/CONTACTENOS" class="text-white hover:text-yellow-300 transition duration-300">Contacto</a></li>
-            </ul>
-        </div>
+       <!-- Grid 2: Enlaces -->
+<div class="footer-links flex flex-col items-center">
+  <h4 class="font-bold text-xl text-center mb-4 text-amarillo">INFORMACIÓN</h4>
+  <ul class="space-y-2 text-center">
+    <li>
+      <a href="/PRODUCTOS/TARJETA-DEBITO" class="text-white hover:text-yellow-300 transition duration-300">
+        Tarjetas
+      </a>
+    </li>
+    <li>
+      <a href="/AGENCIAS" class="text-white hover:text-yellow-300 transition duration-300">
+        Sucursales
+      </a>
+    </li>
+    <li>
+      <a href="/PRODUCTOS/AHORROS" class="text-white hover:text-yellow-300 transition duration-300">
+        Ahorros
+      </a>
+    </li>
+    <li>
+      <a href="/CREDITOS/CREDITO-PERSONAL" class="text-white hover:text-yellow-300 transition duration-300">
+        Créditos
+      </a>
+    </li>
+    <li>
+      <a href="/NOSOTROS" class="text-white hover:text-yellow-300 transition duration-300">
+        Nosotros
+      </a>
+    </li>
+    <li>
+      <a href="/CONTACTENOS" class="text-white hover:text-yellow-300 transition duration-300">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</div>
+
 
         <!-- Grid 3: Síguenos (Redes sociales) -->
         <div class="footer-social flex flex-col items-center">

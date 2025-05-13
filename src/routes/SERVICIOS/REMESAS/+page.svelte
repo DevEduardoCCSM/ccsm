@@ -20,10 +20,8 @@
     <h2 class="text-2xl sm:text-3xl font-bold text-amarillo mb-2 sm:mb-4">
       REMESAS FAMILIARES
     </h2>
-    <p class="text-sm sm:text-base text-white whitespace-pre-line">
-      La Caja de Crédito de San Martín pone a tu disposición el
-      servicio de Pago de Remesas Familiares, para que las recibas
-      de una manera más fácil, rápida y segura.
+    <p class="text-sm sm:text-base text-white whitespace-pre-line text-justify">
+      La Caja de Crédito de San Martín pone a tu disposición el servicio de Pago de Remesas Familiares, para que las recibas de una manera más fácil, rápida y segura.
     </p>
   </div>
 </section>

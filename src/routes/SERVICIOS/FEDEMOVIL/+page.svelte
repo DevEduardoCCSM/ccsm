@@ -19,7 +19,7 @@
     class="bg-verde bg-opacity-90 p-4 sm:p-6 md:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl w-[90%] text-left mr-4 sm:mr-8 md:mr-16"
   >
     <h2 class="text-2xl sm:text-3xl font-bold text-amarillo mb-2 sm:mb-4">FEDEMÓVIL</h2>
-    <p class="text-sm sm:text-base text-white whitespace-pre-line">
+    <p class="text-sm sm:text-base text-white whitespace-pre-line text-justify">
       Tus operaciones financieras.
       Ingresa desde tu celular o tablet a nuestra app FEDE MÓVIL y accede a tus productos y servicios financieros las 24 horas.
     </p>

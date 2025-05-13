@@ -190,7 +190,7 @@ import Loader from '$lib/Loader.svelte';
         {#if image.overlay}
   <img
     src={image.overlay}
-    alt="Decoración"
+    alt=""
     loading="lazy"
     class="absolute left-40 top-1/2 -translate-y-1/2 w-40 h-40 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain z-20 shadow-white border-white rounded-lg"
   />

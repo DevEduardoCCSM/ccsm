@@ -21,12 +21,9 @@
     <h2 class="text-2xl sm:text-3xl font-bold text-amarillo mb-2 sm:mb-4">
       PAGO DE SERVICIOS BÁSICOS
     </h2>
-    <p class="text-sm sm:text-base whitespace-pre-line text-white">
-      Te ofrecemos la facilidad de realizar tus pagos de
-      servicios básicos como:
-      Pago de recibos de energía eléctrica, agua, telefonía,
-      cable, colegiaturas entre otros, para que disfrutes de
-      tu tiempo, hasta donde quieras…
+    <p class="text-sm sm:text-base whitespace-pre-line text-white text-justify">
+      Te ofrecemos la facilidad de realizar tus pagos de servicios básicos como:
+      Pago de recibos de energía eléctrica, agua, telefonía, cable, colegiaturas, otros. Para que disfrutes de tu tiempo, hasta donde quieras…
     </p>
   </div>
 </section>

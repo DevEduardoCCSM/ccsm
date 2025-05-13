@@ -45,7 +45,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">
-        <img src="/images/logo.png" alt="Logo Empresa" class="h-16 hover:scale-125 transition-transform duration-300" loading="lazy" />
+        <img src="/images/logo.png" alt="Logo Empresa" class="h-16 transition-transform duration-300" loading="lazy" />
       </a>
 
       <!-- Desktop Menu -->

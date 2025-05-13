@@ -66,29 +66,30 @@
     </div>
 
  
-    <!-- Contenedor principal -->
-    <div class="max-w-6xl w-full bg-white shadow-lg rounded-lg p-8 mt-16 z-10">
-      <h2 class="text-3xl font-semibold text-amarillo mb-6"></h2>
+  <!-- Contenedor principal -->
+<div class="max-w-6xl w-full bg-white shadow-lg rounded-lg p-8 mt-16 z-10">
 
-      <!-- Carta Mejorada -->
-      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 mx-auto border border-gray-200">
-        <div class="bg-gradient-to-br from-verde to-verde text-center p-6 rounded-lg shadow-inner">
-          <h2 class="text-4xl font-semibold text-amarillo mb-4 tracking-wide">
-            INMUEBLES A LA VENTA
-          </h2>
-          <ul class="text-white text-right space-y-2 font-light">
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span> Te brindamos financiamiento.
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span> Puedes dar una prima inicial.
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-green-500 font-bold">✓</span> Contáctanos para más opciones de compra.
-            </li>
-          </ul>
-        </div>
-      </div>
+
+  <!-- Carta Mejorada -->
+  <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 mx-auto border border-gray-200">
+    <div class="bg-gradient-to-br from-verde to-verde p-6 rounded-lg shadow-inner">
+      <h2 class="text-amarillo text-2xl sm:text-2xl font-bold text-center sm:text-left">
+        INMUEBLES A LA VENTA
+      </h2>
+      <ul class="text-white space-y-2 font-light text-left sm:text-base text-sm">
+        <li class="flex items-start gap-2">
+          <span class="text-green-500 font-bold">✓</span>Te brindamos financiamiento.
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-500 font-bold">✓</span>Puedes dar una prima inicial.
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-500 font-bold">✓</span>Contáctanos para más opciones de compra.
+        </li>
+      </ul>
+    </div>
+
+
 
       <!-- Barra orange -->
       <div class="relative pt-1">
