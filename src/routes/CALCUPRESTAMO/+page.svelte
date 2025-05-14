@@ -6,7 +6,7 @@
 
   let tipoTrabajador = '';
   let tipoPrestamo = '';
-  let monto = 0;
+  let monto = '';
   let resultado = null;
   let showModal = false;
 
@@ -107,13 +107,13 @@
         <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-md w-full space-y-4">
           <img src="/images/banco.jpg" alt="" class="w-24 h-24 mx-auto" loading="lazy" />
           <h2 class="text-xl font-bold text-verde">Resultado del cálculo</h2>
-          <p class="text-gray-700">Cuota mensual estimada: <strong>${resultado.toFixed(2)} USD</strong></p>
+          <p class="text-verde">Cuota mensual estimada: <strong>${resultado.toFixed(2)} USD</strong></p>
           <p class="text-sm text-gray-600">Para más información, contáctanos al:</p>
           <p class="font-medium text-gray-800">📞 Teléfono: 2528-5000</p>
           <p class="font-medium text-verde">
             💬 WhatsApp: <a href="https://wa.me/50370000000" target="_blank" class="underline">Enviar mensaje</a>
           </p>
-          <button on:click={cerrarModal} class="mt-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">
+          <button on:click={cerrarModal} class="mt-4 bg-verde hover:bg-amarillo text-white py-2 px-4 rounded">
             Cerrar
           </button>
         </div>

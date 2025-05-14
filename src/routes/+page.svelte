@@ -9,7 +9,8 @@
     import {  onDestroy } from 'svelte';
     export const prerender = true;
       import SafeLink from '$lib/SafeLink.svelte';
-
+       
+import AlanChat from '$lib/AlanChat.svelte';
     
  
 
@@ -153,6 +154,7 @@ import Loader from '$lib/Loader.svelte';
 <Navbar />
 <slot />
 
+
 <slot />
 <BotonFlotante />
 
@@ -166,7 +168,7 @@ import Loader from '$lib/Loader.svelte';
 
 </svelte:head>
 
-
+<AlanChat />
 
 <!-- Contenido principal -->
 

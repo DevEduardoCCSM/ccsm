@@ -7,7 +7,7 @@
   }
 </script>
 
-<div class="fixed bottom-1 right-1 z-50 flex flex-col items-center">
+<div class="fixed bottom-1 left-1 z-50 flex flex-col items-center">
   <button
     on:click={irAPrestamos}
     on:mouseenter={() => mostrarTooltip = true}

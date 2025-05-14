@@ -41,15 +41,15 @@
   };
 </script>
 
-<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md z-50 ">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md  z-50 ">
+  <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">
         <img src="/images/logo.png" alt="Logo Empresa" class="h-16 transition-transform duration-300" loading="lazy" />
       </a>
 
       <!-- Desktop Menu -->
-      <ul class="hidden lg:flex   divide-x divide-black text-sm font-semibold ">
+      <ul class="hidden lg:flex   divide-x divide-amarillo text-sm font-semibold ">
         <li class="px-4"><a href="/GOBIERNO-CORPORATIVO" class="hover:text-green-700 transition">Gobierno Corporativo</a></li>
         <li class="px-4"><a href="/AGENCIAS" class="hover:text-green-700 transition">Agencias</a></li>
         <li class="px-4"><a href="/FEDE-PUNTO" class="hover:text-green-700 transition">Fede Punto Vecino</a></li>
@@ -121,7 +121,7 @@
   {/if}
 
   <!-- Redes sociales (solo visible en escritorio) -->
-  <div class="footer-social hidden lg:flex flex-row justify-end items-center pr-60 space-x-6 mt-2 tracking-wide">
+  <div class="footer-social hidden lg:flex flex-row justify-end items-center  space-x-6 mt-2 tracking-wide">
     <SafeLink href="https://www.facebook.com/CajadeCreditoSanMartin/?locale=es_LA" target="_blank" aria-label="Facebook"
       class="text-verde hover:text-blue-600 transition duration-300 transform hover:scale-150">
       <i class="fab fa-facebook-f text-2xl"></i>
@@ -134,7 +134,7 @@
       class="text-verde hover:text-pink-600 transition duration-300 transform hover:scale-150">
       <i class="fab fa-instagram text-2xl"></i>
     </SafeLink>
-  </div>
+
 
   <!-- Menú con dropdowns (solo visible en desktop) -->
   <ul class="hidden lg:flex flex-row items-start justify-end  space-x-2 text-left tracking-wide">
