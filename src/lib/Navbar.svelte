@@ -50,7 +50,6 @@
 
       <!-- Desktop Menu -->
       <ul class="hidden lg:flex   divide-x divide-amarillo text-sm font-semibold ">
-        <li class="px-4"><a href="/GOBIERNO-CORPORATIVO" class="hover:text-green-700 transition">Gobierno Corporativo</a></li>
         <li class="px-4"><a href="/AGENCIAS" class="hover:text-green-700 transition">Agencias</a></li>
         <li class="px-4"><a href="/FEDE-PUNTO" class="hover:text-green-700 transition">Fede Punto Vecino</a></li>
         <li class="px-4"><a href="/INMUEBLES" class="hover:text-green-700 transition">Inmuebles</a></li>

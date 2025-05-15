@@ -107,13 +107,14 @@
 
             <!-- Mapa -->
             <div class="w-full h-40 rounded overflow-hidden">
-              <iframe
-                class="w-full h-full"
-                src={propiedad.mapUrl}
-                allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
+  <iframe
+    class="w-full h-full"
+    src={propiedad.mapUrl}
+    allowfullscreen
+    loading="lazy"
+    title="Mapa de ubicación del inmueble"
+  ></iframe>
+</div>
 
             <p class="text-sm text-gray-700"><strong>Extensión:</strong> {propiedad.extension}</p>
             <p class="text-sm text-gray-700"><strong>Municipio:</strong> {propiedad.municipio}</p>

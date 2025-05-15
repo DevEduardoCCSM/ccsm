@@ -5,7 +5,7 @@
     AlanChat.setUrl('https://webchat.cxsuite.cloud/?secret=Xkf7OI9VhkvryvX3dLJjcKYbxwDcYb63xKx&name=Jhon&email=jhon@hikko.dev&bot=test&authenticated=true');
     AlanChat.setTitle('<img class="img-hide" src="/images/FEDE.webp" style="width: 30px;"> FEDE');
     AlanChat.setAccentColor('#007550');
-    AlanChat.setFabType('<img src="images/Chat.png" class="img-hide" style="width: 40px;">'); // images/Chat.png
+    AlanChat.setFabType('<img src="/images/Chat.png" class="img-hide" style="width: 40px;">');
     AlanChat.start();
     AlanChat.setCallBackFunc(function(data) {
       console.log('callback called', data);
@@ -22,7 +22,7 @@
       const chat = document.querySelector('#alanActionButton');
       if (chat) {
         chat.innerHTML = `
-          <img src="images/Chat.png" class="img-hide" style="width: 21px;">  
+          <img src="/images/Chat.png" class="img-hide" style="width: 21px;">  
           <h3 class="img-show" id="alanHeaderText">
             <img src="/images/FEDE.webp" style="width: 21px;"> FEDE
           </h3>
@@ -33,15 +33,26 @@
   });
 </script>
 
-<!-- Puedes añadir clases Tailwind globales en tu layout o app.css -->
+<!-- Estilos locales del componente -->
 <style>
- /* Ocultar el botón flotante redondo por defecto */
- #alanActionButton > button {
+  
+  :global(.img-hide) {
+    display: none;
+  }
+
+  :global(.img-show) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  :global(#alanActionButton > button) {
     display: none !important;
   }
 
-  .alanOverlay { 
-    display: none !important; 
+  :global(.alanOverlay) {
+    display: none !important;
   }
-  
+
+
 </style>

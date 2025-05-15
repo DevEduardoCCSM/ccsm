@@ -103,21 +103,32 @@
     </ul>
   </div>
   
-  <div class="flex justify-center mt-6 ">
-    <div></div>
-    <div></div>
-    <div class="flex justify-center">
-      <div
-        class="grid-item bg-amarillo text-verde  font-bold text-center py-4 px-6 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
-        in:fly={{ y: 50, duration: 600 }}
-      >
-        <a href="/pdfs/pacto1953.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-          <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
-          Pacto Social 1953
-        </a>
-      </div>
+  <div class="flex justify-center mt-6">
+  <div class="flex gap-6 flex-wrap justify-center">
+    <!-- ITEM 1 -->
+    <div
+      class="grid-item bg-amarillo text-verde font-bold text-center py-4 px-6 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
+      in:fly={{ y: 50, duration: 600 }}
+    >
+      <a href="/pdfs/pacto1953.pdf" target="_blank" class="text-inherit flex flex-col items-center">
+        <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
+        Pacto Social 1953
+      </a>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div
+      class="grid-item bg-amarillo text-verde font-bold text-center py-4 px-6 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300"
+      in:fly={{ y: 50, duration: 600 }}
+    >
+      <a href="/GOBIERNO-CORPORATIVO" class="text-inherit flex flex-col items-center">
+        <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
+        GOBIERNO CORPORATIVO
+      </a>
     </div>
   </div>
+</div>
+
   </div>
 </div>
 </div>

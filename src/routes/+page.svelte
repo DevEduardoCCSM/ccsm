@@ -10,7 +10,7 @@
     export const prerender = true;
       import SafeLink from '$lib/SafeLink.svelte';
        
-import AlanChat from '$lib/AlanChat.svelte';
+// import AlanChat from '$lib/AlanChat.svelte';     <AlanChat />
     
  
 
@@ -168,7 +168,7 @@ import Loader from '$lib/Loader.svelte';
 
 </svelte:head>
 
-<AlanChat />
+ 
 
 <!-- Contenido principal -->
 

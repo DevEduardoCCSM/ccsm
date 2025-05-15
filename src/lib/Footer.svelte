@@ -94,16 +94,16 @@
             <!-- Contenedor con las imágenes -->
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
                 <SafeLink href="https://www.fedecredito.com.sv/promociones" target="_blank" class="transition-transform transform hover:scale-125">
-                    <img src="/images/FOOTERimg/fedepuntos.png" alt="Imagen 1" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
+                    <img src="/images/FOOTERimg/Logos FEDEBANKING white.png" alt="Imagen 1" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
                 </SafeLink>
                 <SafeLink href="https://www.fedecredito.com.sv/canales/fede-movil" target="_blank" class="transition-transform transform hover:scale-125">
-                    <img src="/images/FOOTERimg/fmobil.png" alt="Imagen 2" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
+                    <img src="/images/FOOTERimg/Logos FEDEMOVIL white.png" alt="Imagen 2" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
                 </SafeLink>
                 <a href="/FEDE-PUNTO" class="transition-transform transform hover:scale-125">
-                    <img src="/images/FOOTERimg/fpunto.png" alt="Imagen 3" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
+                    <img src="/images/FOOTERimg/Logos FEDEPUNTO white.png" alt="Imagen 3" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
                 </a>
                 <SafeLink href="https://www.fedecredito.com.sv/canales/fede-red-365" target="_blank" class="transition-transform transform hover:scale-125">
-                    <img src="/images/FOOTERimg/fred365.png" alt="Imagen 4" class="w-full h-auto square-lg shadow-md hover:opacity+200" loading="lazy"/>
+                    <img src="/images/FOOTERimg/FEDE365 white.png" alt="Imagen 4" class="w-full h-auto square-lg  hover:opacity+200" loading="lazy"/>
                 </SafeLink>
             </div>
 
