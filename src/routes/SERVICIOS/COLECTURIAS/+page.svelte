@@ -13,7 +13,7 @@
 <!-- 🟩 Banner con imagen de fondo y texto alineado -->
 <section
   class="mt-20 relative w-full h-64 sm:h-72 md:h-[400px] bg-cover bg-no-repeat bg-center flex items-center justify-center md:justify-start text-white shadow-md"
-  style="background-image: url('/images/SERVICIOSimg/PAGOS.webp');"
+  style="background-image: url('/images/SERVICIOSimg/PAGOS.jpeg');"
 >
   <div
     class="bg-verde bg-opacity-90 p-4 sm:p-6 md:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg md:max-w-xl w-[90%] text-left sm:ml-6 md:ml-16"

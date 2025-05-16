@@ -169,7 +169,7 @@
 </script>
 
 <section class=" bg-gray-100 rounded-lg ">
-  <h2 class="text-2xl font-semibold text-verde mb-6">
+  <h2 class="text-2xl font-semibold text-verde mb-6 text-center">
     AGENCIA CENTRAL CAJA CREDITO SAN MARTIN
   </h2>
   <p class="text-verde mb-4">
@@ -200,7 +200,7 @@
 
   <!-- Columna derecha: formulario -->
   <div class="lg:border-l lg:pl-8">
-    <h2 class="text-2xl font-semibold text-verde mb-6">ENVIANOS UN MENSAJE PARA CONTACTARTE! </h2>
+    <h2 class="text-2xl font-semibold text-verde mb-6 text-center">ENVIANOS UN MENSAJE PARA CONTACTARTE! </h2>
 
     {#if errorMsg}
       <div class="mb-4 p-3 bg-red-100 text-red-700 border border-red-300 rounded">

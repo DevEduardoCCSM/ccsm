@@ -53,7 +53,7 @@ let currentIndex = 0;
       textAnimation: '', 
     },
     {
-      src: '/images/CARUSELimg/CUENTA INFANTIL.jpg',
+      src: '/images/CARUSELimg/CUENTA-INFANTIL.webp',
       alt: '',
       text: 'ACOMPAÑANDOTE SIEMPRE...',
       overlay: '/images/CARUSELimg/MANITA.png',

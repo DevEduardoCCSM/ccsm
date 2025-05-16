@@ -45,11 +45,12 @@
   <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">
-        <img src="/images/logo.png" alt="Logo Empresa" class="h-16 transition-transform duration-300" loading="lazy" />
+        <img src="/images/logo.png" alt="Logo Empresa" class="h-16 transition-transform duration-300 mt-0 sm:mt-6" loading="lazy" />
       </a>
 
       <!-- Desktop Menu -->
       <ul class="hidden lg:flex   divide-x divide-amarillo text-sm font-semibold ">
+          <li class="px-4"><a href="/" class="hover:text-green-700 transition">Inicio</a></li>
         <li class="px-4"><a href="/AGENCIAS" class="hover:text-green-700 transition">Agencias</a></li>
         <li class="px-4"><a href="/FEDE-PUNTO" class="hover:text-green-700 transition">Fede Punto Vecino</a></li>
         <li class="px-4"><a href="/INMUEBLES" class="hover:text-green-700 transition">Inmuebles</a></li>
@@ -69,7 +70,7 @@
   {#if isMenuOpen}
     <div class="lg:hidden bg-white w-full text-sm font-semibold text-gray-500 shadow-md">
       <ul class="divide-y divide-gray-200 px-4 py-4 space-y-2">
-        <li><a href="/GOBIERNO-CORPORATIVO" class="block py-2 hover:text-green-700">Gobierno Corporativo</a></li>
+        <li><a href="/" class="block py-2 hover:text-green-700">Inicio</a></li>
         <li><a href="/AGENCIAS" class="block py-2 hover:text-green-700">Agencias</a></li>
         <li><a href="/FEDE-PUNTO" class="block py-2 hover:text-green-700">Fede Punto Vecino</a></li>
         <li><a href="/INMUEBLES" class="block py-2 hover:text-green-700">Inmuebles</a></li>
