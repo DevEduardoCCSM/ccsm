@@ -86,9 +86,9 @@
             style="max-height: {mostrarEstadosFinancieros ? '300px' : '0px'}"
           >
             <div class="flex flex-col items-center space-y-1 py-2">
-              <a href="/pdfs/codigo-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
-              <a href="/pdfs/codigo-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-              <a href="/pdfs/codigo-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+              <a href="/pdfs/estados financieros/estado financiero 2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+              <a href="/pdfs/estados financieros/estado financiero 2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+              <a href="/pdfs/estados financieros/estado financiero 2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@
             on:click={() => (mostrarAuditorExterno = !mostrarAuditorExterno)}
             class="w-full flex flex-col items-center focus:outline-none"
           >
-            <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>
+            <i class="fas fa-user text-4xl mb-2 text-amarillo"></i>
             Informe Auditor Externo
             <span class="text-sm mt-2">{mostrarAuditorExterno ? '▲ Ocultar' : '▼ Ver años'}</span>
           </button>
@@ -132,9 +132,9 @@
             style="max-height: {mostrarAuditorExterno ? '300px' : '0px'}"
           >
             <div class="flex flex-col items-center space-y-1 py-2">
-              <a href="/pdfs/auditor-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
-              <a href="/pdfs/auditor-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-              <a href="/pdfs/auditor-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+              <a href="/pdfs/auditor externo/informe auditor externo 2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+              <a href="/pdfs/auditor externo/informe auditor externo 2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+              <a href="/pdfs/auditor externo/informe auditor externo 2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
             </div>
           </div>
         </div>
@@ -156,9 +156,9 @@
     style="max-height: {mostrarMemoriaAnual ? '300px' : '0px'}"
   >
     <div class="flex flex-col items-center space-y-1 py-2">
-      <a href="/pdfs/informe-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
-      <a href="/pdfs/informe-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-      <a href="/pdfs/informe-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
     </div>
   </div>
 </div>

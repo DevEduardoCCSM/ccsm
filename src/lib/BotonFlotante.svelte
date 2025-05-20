@@ -12,7 +12,7 @@
     on:click={irAPrestamos}
     on:mouseenter={() => mostrarTooltip = true}
     on:mouseleave={() => mostrarTooltip = false}
-    class="w-14 h-14 rounded-full border-2 border-red-600 animate-color-pulse focus:outline-none hover:scale-125 transition-transform duration-200 flex items-center justify-center text-2xl text-white bg-amarillo shadow-lg"
+    class="w-14 h-14 rounded-full border-2  animate-color-pulse focus:outline-none hover:scale-125 transition-transform duration-200 flex items-center justify-center text-2xl text-white bg-amarillo shadow-lg"
     aria-label="Ir a préstamos"
   >
     <!-- Giro 3D -->
