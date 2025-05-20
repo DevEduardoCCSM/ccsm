@@ -157,8 +157,8 @@
   >
     <div class="flex flex-col items-center space-y-1 py-2">
       <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
-      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+      <a href="/pdfs/memoria 2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2024</a>
     </div>
   </div>
 </div>
