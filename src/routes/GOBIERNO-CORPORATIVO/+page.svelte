@@ -8,8 +8,8 @@
 
   let mostrarEstadosFinancieros = false;
   let mostrarInformeGobierno = false;
-
- 
+  let mostrarAuditorExterno = false;
+  let mostrarMemoriaAnual = false;
 </script>
 
 <Navbar />
@@ -48,97 +48,112 @@
       <!-- Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-     
-
-        <!-- Otros documentos -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+        <!-- Documentos fijos -->
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
           <a href="/pdfs/pacto.pdf" target="_blank" class="text-inherit flex flex-col items-center">
             <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
             Pacto Social
           </a>
         </div>
 
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
-          <a href="/pdfs/memoria2024.pdf" target="_blank" class="text-inherit flex flex-col items-center">
-            <i class="fas fa-calendar text-4xl mb-2 text-amarillo"></i>
-            Memoria de Labores
-          </a>
-        </div>
-
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
           <a href="/pdfs/etica.pdf" target="_blank" class="text-inherit flex flex-col items-center">
             <i class="fas fa-users text-4xl mb-2 text-amarillo"></i>
             Código de Ética
           </a>
         </div>
 
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
+        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
           <a href="/pdfs/codigo de gobierno corporativo.pdf" target="_blank" class="text-inherit flex flex-col items-center">
             <i class="fas fa-flag text-4xl mb-2 text-amarillo"></i>
-          Codigo de Gobierno Corporativo
+            Código de Gobierno Corporativo
           </a>
         </div>
 
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
-          <a href="/pdfs/Estado financiero 1.pdf" target="_blank" class="text-inherit flex flex-col items-center">
+        <!-- BOTÓN: Estados Financieros -->
+        <div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+          <button
+            on:click={() => (mostrarEstadosFinancieros = !mostrarEstadosFinancieros)}
+            class="w-full flex flex-col items-center focus:outline-none"
+          >
             <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
             Estados Financieros
-          </a>
+            <span class="text-sm mt-2">{mostrarEstadosFinancieros ? '▲ Ocultar' : '▼ Ver años'}</span>
+          </button>
+
+          <div
+            class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
+            style="max-height: {mostrarEstadosFinancieros ? '300px' : '0px'}"
+          >
+            <div class="flex flex-col items-center space-y-1 py-2">
+              <a href="/pdfs/codigo-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+              <a href="/pdfs/codigo-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+              <a href="/pdfs/codigo-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+            </div>
+          </div>
         </div>
 
-        <!-- Pendientes -->
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
-          <a href="#" target="_blank" class="text-inherit flex flex-col items-center">
-            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
-            Pendiente
-          </a>
+        <!-- BOTÓN: Informe de Gobierno -->
+        <div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+          <button
+            on:click={() => (mostrarInformeGobierno = !mostrarInformeGobierno)}
+            class="w-full flex flex-col items-center focus:outline-none"
+          >
+            <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>
+            Informe de Gobierno
+            <span class="text-sm mt-2">{mostrarInformeGobierno ? '▲ Ocultar' : '▼ Ver años'}</span>
+          </button>
+
+          <div
+            class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
+            style="max-height: {mostrarInformeGobierno ? '300px' : '0px'}"
+          >
+            <div class="flex flex-col items-center space-y-1 py-2">
+              <a href="/pdfs/informe-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+              <a href="/pdfs/informe-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+              <a href="/pdfs/informe-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+            </div>
+          </div>
         </div>
 
-        <div class="grid-item bg-amarillo text-verde font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300" in:fly={{ y: 50, duration: 600 }}>
-          <a href="#" target="_blank" class="text-inherit flex flex-col items-center">
-            <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
-            Pendiente
-          </a>
+        <!-- BOTÓN: Informe Auditor Externo -->
+        <div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+          <button
+            on:click={() => (mostrarAuditorExterno = !mostrarAuditorExterno)}
+            class="w-full flex flex-col items-center focus:outline-none"
+          >
+            <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>
+            Informe Auditor Externo
+            <span class="text-sm mt-2">{mostrarAuditorExterno ? '▲ Ocultar' : '▼ Ver años'}</span>
+          </button>
+
+          <div
+            class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
+            style="max-height: {mostrarAuditorExterno ? '300px' : '0px'}"
+          >
+            <div class="flex flex-col items-center space-y-1 py-2">
+              <a href="/pdfs/auditor-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+              <a href="/pdfs/auditor-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
+              <a href="/pdfs/auditor-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
+            </div>
+          </div>
         </div>
 
-        <!-- ✅ BOTÓN DESPLEGABLE ESTADO FINANCIEROS -->
-<div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
-  <button
-    on:click={() => (mostrarEstadosFinancieros = !mostrarEstadosFinancieros)}
+        <!-- BOTÓN: Memoria de Labores -->
+        <div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
+          <button
+            on:click={() => (mostrarMemoriaAnual = !mostrarMemoriaAnual)}
+
     class="w-full flex flex-col items-center focus:outline-none"
   >
-    <i class="fas fa-tablet-alt text-4xl mb-2 text-amarillo"></i>
-    Estados Financieros
-    <span class="text-sm mt-2">{mostrarEstadosFinancieros ? '▲ Ocultar' : '▼ Ver años'}</span>
+    <i class="fas fa-calendar text-4xl mb-2 text-amarillo"></i>
+     Memoria de Labores
+    <span class="text-sm mt-2">{mostrarMemoriaAnual ? '▲ Ocultar' : '▼ Ver años'}</span>
   </button>
 
   <div
     class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
-    style="max-height: {mostrarEstadosFinancieros ? '300px' : '0px'}"
-  >
-    <div class="flex flex-col items-center space-y-1 py-2">
-      <a href="/pdfs/codigo-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
-      <a href="/pdfs/codigo-gobierno-2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-      <a href="/pdfs/codigo-gobierno-2022.pdf" target="_blank" class="hover:underline text-base">Año 2022</a>
-    </div>
-  </div>
-</div>
-
-
- <!-- ✅ BOTÓN DESPLEGABLE CODIGOS CORPORATIVOS -->
-<div class="bg-verde text-white font-bold text-center py-4 rounded-lg shadow transform hover:scale-105 hover:shadow-lg transition-transform duration-300">
-  <button
-    on:click={() => (mostrarInformeGobierno = !mostrarInformeGobierno)}
-    class="w-full flex flex-col items-center focus:outline-none"
-  >
-    <i class="fas fa-book text-4xl mb-2 text-amarillo"></i>
-    Informe de Gobierno
-    <span class="text-sm mt-2">{mostrarInformeGobierno ? '▲ Ocultar' : '▼ Ver años'}</span>
-  </button>
-
-  <div
-    class="overflow-hidden transition-all duration-500 ease-in-out mt-2"
-    style="max-height: {mostrarInformeGobierno ? '300px' : '0px'}"
+    style="max-height: {mostrarMemoriaAnual ? '300px' : '0px'}"
   >
     <div class="flex flex-col items-center space-y-1 py-2">
       <a href="/pdfs/informe-gobierno-2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
@@ -147,6 +162,7 @@
     </div>
   </div>
 </div>
+
 
 
       </div>
@@ -252,7 +268,7 @@
     </div>
   </div>
 </section>
-
+  
 
 <Footer />
 <slot />

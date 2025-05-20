@@ -123,7 +123,7 @@
     >
       <a href="/GOBIERNO-CORPORATIVO" class="text-inherit flex flex-col items-center">
         <i class="fas fa-file text-4xl mb-2 text-amarillo"></i>
-        GOBIERNO CORPORATIVO
+       Gobierno Corporativo
       </a>
     </div>
   </div>
@@ -136,3 +136,4 @@
 
 <Footer />
 <slot />
+ 

@@ -98,15 +98,15 @@ import Loader from '$lib/Loader.svelte';
         <!-- Tarjeta 1 -->
         <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
           <img 
-            src="/images/MODALimg/contador.jpg" 
+            src="/images/MODALimg/padre1.jpg" 
             alt="" 
             class="w-full h-40 sm:h-48 object-contain" 
           />
           <div class="p-3 sm:p-4 text-center">
-            <p class="text-lg sm:text-xl font-bold text-verde">¡AVISO!</p>
+            <p class="text-lg sm:text-xl font-bold text-verde">¡AVISO IMPORTANTE!</p>
             <p class="text-gray-700 mt-2 text-sm sm:text-base">
-              Felicidades contadores!
-              <strong>Este 17 de mayo celebraremos el día del contador</strong>.
+         
+              <strong>  ASUETO! motivo de la celebración del Día del Padre, nuestras oficinas permanecerán cerradas el día martes 17 de junio. reanudamos miercoles. </strong>.
             </p>
           </div>
         </div>
@@ -508,7 +508,7 @@ import Loader from '$lib/Loader.svelte';
 
 
 
-<!-- FEDEBANKING Optimizado -->
+<!-- FEDEBANKING Optimizado this is a part of the all div container  -->
 <div class="flex flex-col lg:flex-row justify-center p-4 sm:p-6 md:p-8 mt-8 bg-gradient-to-r from-verde via-white to-white rounded-lg shadow-lg gap-8">
   
   <!-- Contenedor de los botones -->
@@ -538,7 +538,7 @@ import Loader from '$lib/Loader.svelte';
     </SafeLink>
   </div>
 
-  <!-- Imagen -->
+  <!-- Imagen fedebanking -->
   <div class="flex justify-center items-center w-full lg:w-2/3">
     <img
       src="/images/reporta.png"
