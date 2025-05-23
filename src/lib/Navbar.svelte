@@ -58,7 +58,7 @@
         <img
           src="/images/logo.png"
           alt="Logo Empresa"
-          class="responsive-logo transition-transform duration-300 h-12 sm:h-16 mt-0 sm:mt-6"
+          class="responsive-logo transition-transform duration-300 h-12 sm:h-8 mt-0 sm:mt-6"
           loading="lazy"
         />
       </a>
