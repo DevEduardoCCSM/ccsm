@@ -16,13 +16,18 @@
 
 
 
- import { page } from '$app/stores';
+ import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import { page } from '$app/stores';
 
-  $: if ($page.url.pathname !== '/') {
-    goto('/');
-  }
-
+  onMount(() => {
+    if (performance?.navigation?.type === 1 || performance.getEntriesByType('navigation')[0]?.type === 'reload') {
+      // Recarga desde URL directa (como al abrir la app cerrada)
+      if (location.pathname !== '/') {
+        goto('/');
+      }
+    }
+  });
 
 
 let showModal = false; // Inicialmente no se muestra
