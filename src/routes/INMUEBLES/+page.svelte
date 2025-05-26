@@ -7,20 +7,7 @@
 
 
   const propiedades = [
-    {
-      direccion: 'Colonia Santa María III Pólig." I " No.161 y 162, dos lotes que forman un solo Cuerpo,San Martín Depto. De San Salvador',
-      municipio: 'San Martín',
-      precio: '$',
-      extension:'207.10 mt²',
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98018.93350506689!2d-89.13803658807609!3d13.746115179062077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f634632aff09b4b%3A0xea564f4798aa80df!2sParque%20Central%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745512158978!5m2!1ses!2ssv'
-    },
-    {
-      direccion: ' Lotificacion San Martín, Hijuela B, Calle al Cton.Corinto de la J/ San Martín',
-      municipio: 'San Martín',
-      precio: '$',
-      extension:'193.25 mt²',
-      mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98018.93350506689!2d-89.13803658807609!3d13.746115179062077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f634632aff09b4b%3A0xea564f4798aa80df!2sParque%20Central%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745512158978!5m2!1ses!2ssv'
-    },
+   
     {
       direccion: 'Canton San Jose Lote #S/N de la Jurisdiccion de San Martin Depto. San Salvador',
       municipio: 'San Martín',
@@ -38,14 +25,14 @@
     {
       direccion: 'Bo.Concepcion, Av. José Maria Rivas, Cojutepeque, Depto. Cuscatlan ',
       municipio: 'Cuscatlan',
-      precio: '$385,000',
+      precio: '$',
       extension:'294.96 mt²',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16356.731461506743!2d-88.95117982703273!3d13.720545215058374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6350043fca7223%3A0x7977bd4834f6c8c0!2sCojutepeque!5e1!3m2!1ses!2ssv!4v1745512475291!5m2!1ses!2ssv'
     },
     {
       direccion: 'Reparto Residencial No.2 Lote No.7, Polig."C", Finca Venecia, J/Cojutepeque Depto. Cuscatlan',
       municipio: 'Cuscatlan',
-      precio: '$110,000',
+      precio: '$',
       extension:'70.00 mt²',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16356.731461506743!2d-88.95117982703273!3d13.720545215058374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6350043fca7223%3A0x7977bd4834f6c8c0!2sCojutepeque!5e1!3m2!1ses!2ssv!4v1745512475291!5m2!1ses!2ssv'
     }

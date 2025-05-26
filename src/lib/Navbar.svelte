@@ -41,26 +41,11 @@
   };
 </script>
 
-<style>
-  /* Ajuste extra en modo landscape móvil */
-  @media (orientation: landscape) and (max-width: 768px) {
-    .responsive-logo {
-      height: 2.5rem; /* más pequeño para evitar que se corte */
-      margin-top: 0.25rem;
-    }
-  }
-</style>
-
-<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md z-50">
+<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md  z-50 ">
   <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 sm:h-20">
+    <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">
-        <img
-          src="/images/logo.png"
-          alt="Logo Empresa"
-          class="responsive-logo transition-transform duration-300 h-12 sm:h-8 mt-0 sm:mt-6"
-          loading="lazy"
-        />
+        <img src="/images/logo.png" alt="Logo Empresa" class="h-16 transition-transform duration-300 mt-0 sm:mt-6" loading="lazy" />
       </a>
 
       <!-- Desktop Menu -->

@@ -94,22 +94,8 @@ import Loader from '$lib/Loader.svelte';
       </div>
 
       <!-- Contenedor de tarjetas -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-4">
-        <!-- Tarjeta 1 -->
-        <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
-          <img 
-            src="/images/MODALimg/padre1.jpg" 
-            alt="" 
-            class="w-full h-40 sm:h-48 object-contain" 
-          />
-          <div class="p-3 sm:p-4 text-center">
-            <p class="text-lg sm:text-xl font-bold text-verde">¡AVISO IMPORTANTE!</p>
-            <p class="text-gray-700 mt-2 text-sm sm:text-base">
-         
-              <strong>  ASUETO! motivo de la celebración del Día del Padre, nuestras oficinas permanecerán cerradas el día martes 17 de junio. reanudamos miercoles. </strong>.
-            </p>
-          </div>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-1 gap-4 sm:gap-6 mt-4">
+       
 
         <!-- Tarjeta 2 -->
         <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
@@ -162,7 +148,8 @@ import Loader from '$lib/Loader.svelte';
     <!-- Aquí va el contenido de la página -->
   </main>
 
-<svelte:head>
+<svelte:head> 
+  
     <link rel="icon" href="/fede.ico" />
  
 
@@ -555,18 +542,10 @@ import Loader from '$lib/Loader.svelte';
 <!-- NOSOTROS Responsive y optimizado -->
 <div class="flex flex-col md:flex-row justify-between items-start p-4 sm:p-6 md:p-8 mt-8 bg-white rounded-lg max-w-6xl mx-auto gap-6">
   
-  <!-- Imagen al lado izquierdo -->
-  <div class="w-full md:w-1/4">
-    <img
-      src="/images/aniversary.png"
-      alt=""
-      loading="lazy"
-      class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105"
-    />
-  </div>
+  
 
   <!-- Tarjeta de texto con botón debajo -->
-  <div class="w-full md:w-1/2 flex flex-col space-y-4">
+<div class="w-full max-w-md mx-auto px-4 flex flex-col space-y-4">
     <!-- Tarjeta de texto -->
     <div class="bg-gray-100 p-6 rounded-lg shadow-sm">
       <h2 class="text-2xl sm:text-3xl font-bold text-verde mb-2 text-center">

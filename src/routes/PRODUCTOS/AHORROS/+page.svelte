@@ -335,8 +335,8 @@ style="background-image: url('/images/AHORROSimg/banco.jpg');"
   
 
   <!-- Contenedor de tarjetas -->
-  <div class="max-w-6xl w-full bg-green-100 shadow-2xl rounded-xl p-6 sm:p-10 mt-4 z-10 flex flex-col md:flex-row gap-6 sm:gap-10">
-    <div class="w-full flex flex-col items-center">
+   <div class="min-h-screen flex flex-col items-center py-6 sm:py-20 relative">
+      <div class="w-full flex flex-col items-center">
       {#each tarjetas as tarjeta (tarjeta.titulo)}
         <Tarjeta titulo={tarjeta.titulo} imagen={tarjeta.imagen} tabs={tarjeta.tabs} />
       {/each}
@@ -344,6 +344,8 @@ style="background-image: url('/images/AHORROSimg/banco.jpg');"
   </div>
 </div>
 </main>
+
+
 
 <Footer />
 

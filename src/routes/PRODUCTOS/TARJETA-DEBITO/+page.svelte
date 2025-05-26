@@ -493,14 +493,15 @@ porcentaje automático del depósito a plazo.</li>
     </div>
 
     <!-- Contenedor principal (más grande y profesional) -->
-    <div class="max-w-6xl w-full bg-green-100 shadow-2xl rounded-xl p-6 sm:p-10 mt-4 z-10 flex flex-col md:flex-row gap-6 sm:gap-10 relative py-2">
-      <div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col items-center py-6 sm:py-12 relative w-full">
+    <div class="min-h-screen flex flex-col items-center py-6 sm:py-20 relative">
+      <div class="w-full flex flex-col items-center">
         {#each tarjetas as tarjeta (tarjeta.titulo)}
           <Tarjeta titulo={tarjeta.titulo} imagen={tarjeta.imagen} tabs={tarjeta.tabs} />
         {/each}
       </div>
     </div>
   </div>
+  
 </main>
 
 <Footer />

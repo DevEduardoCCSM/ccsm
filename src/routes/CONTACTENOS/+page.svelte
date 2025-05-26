@@ -170,15 +170,15 @@
 
 <section class=" bg-gray-100 rounded-lg ">
   <h2 class="text-2xl font-semibold text-verde mb-6 text-center">
-    AGENCIA CENTRAL CAJA CREDITO SAN MARTIN
+    OFICINA CENTRAL CAJA CREDITO SAN MARTIN
   </h2>
   <p class="text-verde mb-4">
-    Nuestra <strong>Agencia Central</strong> se encuentra en la siguiente dirección:
+    Nuestra <strong>Oficina Central</strong> se encuentra en la siguiente dirección:
   </p>
   <address class="text-verde mb-4 text-justify">
     <p><strong>Dirección:</strong> Edificio Juan Ovidio Hernández Palacios, Final Av. Morazán km 18, San Martín, San Salvador, CP 1129.</p>
-    <p><strong>Horario de Atención:</strong> Lunes a Viernes de 7:30 AM a 4:30 PM. Sabado de 7:30 AM a 12:00 PM</p>
-  </address>
+    <p><strong>Horario de Atención:</strong> Lunes a Viernes de 8:30 AM a 4:00 PM. Sabado de 8:30 AM a 12:00 PM.</p> 
+    <p><strong>Horario de Atención caja externa:</strong> Lunes a Sabado de 7:00 AM a 8:15 AM. </p>  </address>
   
 </section>
 
