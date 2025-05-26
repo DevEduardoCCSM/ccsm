@@ -5,7 +5,7 @@
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   export const prerender = true;
-  import "../tailwind.css";
+
 
 
   export let locations = [

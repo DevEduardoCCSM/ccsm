@@ -8,7 +8,7 @@ const config = {
     }),
     paths: {
       base: '',
-      relative: false, // <-- Esto es lo que faltaba
+      relative: false, // <-- Esto es lo que faltaba 
     }
   },
 };
