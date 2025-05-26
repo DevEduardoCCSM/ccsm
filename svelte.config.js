@@ -4,9 +4,12 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
     adapter: adapter({
-      // Si tienes rutas dinámicas, usa fallback como 'index.html'
-      fallback: 'index.html', // Esto hace que la app funcione como SPA
+      fallback: 'index.html',
     }),
+    paths: {
+      base: '',
+      relative: false, // <-- Esto es lo que faltaba
+    }
   },
 };
 
