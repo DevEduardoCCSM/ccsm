@@ -1,14 +1,10 @@
 <script>
-    import Navbar from '$lib/Navbar.svelte';
-    import Footer from '$lib/Footer.svelte';
-    import BotonFlotante from '$lib/BotonFlotante.svelte';
+
     export const prerender = true;
     import SafeLink from '$lib/SafeLink.svelte';
 
   </script>
-  
-  <Navbar />
-  <BotonFlotante />
+
   
   <!-- 🟩 Banner con imagen de fondo y texto alineado -->
   <section
@@ -101,8 +97,7 @@
     </div>
   </main>
   
-  <Footer />
-  <slot />
+
   
   <style>
     /* Puedes agregar estilos globales aquí si es necesario */

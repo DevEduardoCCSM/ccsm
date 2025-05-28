@@ -1,8 +1,7 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+ 
   import { onMount } from 'svelte';
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
   export const prerender = true;
     import SafeLink from '$lib/SafeLink.svelte';
@@ -54,7 +53,7 @@
   };
 </script>
 
-<Navbar />
+
 
 
 
@@ -273,5 +272,3 @@
 </style>
 
 
-
-<Footer />

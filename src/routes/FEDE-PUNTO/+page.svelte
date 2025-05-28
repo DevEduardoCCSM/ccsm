@@ -1,9 +1,8 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+ 
   import { onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+ 
   export const prerender = true;
 
 
@@ -51,14 +50,13 @@
   });
 </script>
 
-<Navbar />
+
 
 <main class="mt-4">
   <!-- Aquí va el contenido de la página -->
 </main>
 
-<slot />
-<BotonFlotante />
+
 
 <main>
   <!-- Contenedor relativo para encapsular fondo y contenido -->
@@ -109,6 +107,4 @@
   </div>
 </main>
 
-<!-- Footer separado del fondo con z-20 para estar al frente siempre -->
-<slot />
-<Footer class="relative z-20" />
+

@@ -1,7 +1,5 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+
   import Tarjeta from '$lib/Tarjeta.svelte';
   export const prerender = true;
 
@@ -43,8 +41,7 @@
   ];
 </script>
 
-<Navbar />
-<BotonFlotante />
+
 
 <!-- Fondo decorativo no bloquea interacción -->
 <div class="relative">
@@ -66,4 +63,4 @@
   </main>
 </div>
 
-<Footer />
+

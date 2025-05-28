@@ -1,6 +1,5 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+ 
   import BotonFlotante from '$lib/BotonFlotante.svelte';
   import { fade, fly } from 'svelte/transition';
 
@@ -12,11 +11,11 @@
   let mostrarMemoriaAnual = false;
 </script>
 
-<Navbar />
+
 <slot />
 <main class="mt-4"></main>
 <slot />
-<BotonFlotante />
+
 
 <div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-12 relative z-0">
   <!-- Fondo -->
@@ -269,6 +268,3 @@
   </div>
 </section>
   
-
-<Footer />
-<slot />

@@ -1,33 +1,16 @@
 <script>
-    import {fade, fly } from 'svelte/transition';
-    import Navbar from '$lib/Navbar.svelte';
-    import "../tailwind.css";
-   
-    import { onMount } from 'svelte';
-    import Footer from '$lib/Footer.svelte';
-    import BotonFlotante from '$lib/BotonFlotante.svelte';
-    import {  onDestroy } from 'svelte';
-    export const prerender = true;
-      import SafeLink from '$lib/SafeLink.svelte';
-       
-// import AlanChat from '$lib/AlanChat.svelte';     <AlanChat />
-    
- 
+  import { onMount } from 'svelte';
+  import { navigating } from '$app/stores';
+  import "../tailwind.css";
 
-let showModal = false; // Inicialmente no se muestra
+  import BotonFlotante from '$lib/BotonFlotante.svelte';
+  import SafeLink from '$lib/SafeLink.svelte';
+  import Loader from '$lib/Loader.svelte';
 
-onMount(() => {
-  const alreadyShown = sessionStorage.getItem('modalShown');
-  if (!alreadyShown) {
-    showModal = true;
-  }
-});
+  export const prerender = true;
 
-const closeModal = () => {
-  showModal = false;
-  sessionStorage.setItem('modalShown', 'true');
-};
-let currentIndex = 0;
+  let showModal = false;
+  let currentIndex = 0;
   let bannerVisible = true;
 
   const images = [
@@ -36,32 +19,38 @@ let currentIndex = 0;
       alt: '',
       text: '72 AÑOS CONTIGO!',
       overlay: '/images/CARUSELimg/TIN.png',
-      textAnimation: '', 
+      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/FEDEBANKING.jpg',
       alt: '',
       text: 'NUESTROS SERVICIOS PARA TI!',
       overlay: '/images/CARUSELimg/FEDEMOV.png',
-      textAnimation: '', 
+      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/TARJETAS DE CREDITO.jpg',
       alt: '',
       text: 'DISFRUTA, VIVE Y GANA CON NUESTRAS TARJETAS!',
       overlay: '/images/CARUSELimg/FEDEPUNTOS.png',
-      textAnimation: '', 
+      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/CUENTA-INFANTIL.webp',
       alt: '',
       text: 'ACOMPAÑANDOTE SIEMPRE...',
       overlay: '/images/CARUSELimg/MANITA.png',
-      textAnimation: '', 
+      textAnimation: '',
     }
   ];
 
+  // Mostrar modal si no ha sido mostrado en esta sesión
   onMount(() => {
+    const alreadyShown = sessionStorage.getItem('modalShown');
+    if (!alreadyShown) {
+      showModal = true;
+    }
+
     const interval = setInterval(() => {
       currentIndex = (currentIndex + 1) % images.length;
     }, 5000);
@@ -69,15 +58,12 @@ let currentIndex = 0;
     return () => clearInterval(interval);
   });
 
-import Loader from '$lib/Loader.svelte';
-  import { navigating } from '$app/stores';
+  const closeModal = () => {
+    showModal = false;
+    sessionStorage.setItem('modalShown', 'true');
+  };
 
   $: isNavigating = $navigating !== null;
-
- 
-
-
-
 </script>
 
 {#if showModal}
@@ -136,13 +122,8 @@ import Loader from '$lib/Loader.svelte';
 
 <slot />
 
-<!-- Contenido del Layout -->
-<Navbar />
-<slot />
 
 
-<slot />
-<BotonFlotante />
 
 <main class="mt-16">
     <!-- Aquí va el contenido de la página -->
@@ -572,5 +553,3 @@ import Loader from '$lib/Loader.svelte';
 
 
 
-<Footer />
-<slot />

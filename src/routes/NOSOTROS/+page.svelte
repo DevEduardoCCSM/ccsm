@@ -1,14 +1,12 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+ 
   export const prerender = true;
 
 </script>
 
-<Navbar />
-<slot />
+
 
 <main class="mt-4">
   <!-- Aquí va el contenido de la página -->
@@ -134,6 +132,6 @@
 </div>
 </div>
 
-<Footer />
+
 <slot />
  

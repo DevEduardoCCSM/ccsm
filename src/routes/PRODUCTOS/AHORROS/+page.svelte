@@ -1,7 +1,6 @@
 <script>
-    import Navbar from '$lib/Navbar.svelte';
-    import Footer from '$lib/Footer.svelte';
-    import BotonFlotante from '$lib/BotonFlotante.svelte';
+   
+ 
     import Tarjeta from '$lib/Tarjeta.svelte';
     import { fade, fly } from 'svelte/transition'; // Importa las transiciones
   export const prerender = true;
@@ -295,8 +294,8 @@ Sistema Fedecredito.</li>
     ];
   </script>
   
-  <Navbar />
-  <BotonFlotante />
+
+
   
  <!-- Banner con imagen de fondo y texto alineado -->
 <section
@@ -347,7 +346,6 @@ style="background-image: url('/images/AHORROSimg/banco.jpg');"
 
 
 
-<Footer />
 
   
   

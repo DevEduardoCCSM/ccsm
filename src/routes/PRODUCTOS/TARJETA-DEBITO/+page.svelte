@@ -1,7 +1,6 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+
+
   import Tarjeta from '$lib/Tarjeta.svelte';
   import { fade, fly } from 'svelte/transition'; // Importa las transiciones
   export const prerender = true;
@@ -471,8 +470,7 @@ porcentaje automático del depósito a plazo.</li>
   ];
 </script>
 
-<Navbar />
-<BotonFlotante />
+
 
 
   <!-- Fondo decorativo -->
@@ -504,5 +502,4 @@ porcentaje automático del depósito a plazo.</li>
   
 </main>
 
-<Footer />
 

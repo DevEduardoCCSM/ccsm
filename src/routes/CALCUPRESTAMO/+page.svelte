@@ -1,6 +1,5 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+ 
   export const prerender = true;
 
 
@@ -33,7 +32,6 @@
   }
 </script>
 
-<Navbar />
 
 <main class="mt-4 relative z-10">
   <div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-12 relative">
@@ -122,4 +120,3 @@
   </div>
 </main>
 
-<Footer />

@@ -1,8 +1,7 @@
 <script>
-  import Navbar from '$lib/Navbar.svelte';
-  import Footer from '$lib/Footer.svelte';
+
   import { onMount } from 'svelte';
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
+
   import { fade, fly } from 'svelte/transition';
   export const prerender = true;
 
@@ -78,10 +77,10 @@
   };
 </script>
 
-<Navbar />
+
 
 <main class="mt-14 min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex items-center justify-center px-4 py-20 relative">
-  <BotonFlotante />
+
 
   <!-- Fondo dividido en 3 colores con pointer-events-none para evitar bloquear los clics -->
   <div class="absolute inset-0 z-0 pointer-events-none">
@@ -185,4 +184,4 @@
   @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 </style>
 
-<Footer />
+
