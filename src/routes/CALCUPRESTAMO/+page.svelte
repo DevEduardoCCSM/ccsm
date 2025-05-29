@@ -11,7 +11,7 @@
 
   const prestamos = {
     personal: { interes: 0.20, plazo: 5 },
-    vivienda: { interes: 0.18, plazo: 20 },
+    vivienda: { interes: 0.15, plazo: 25 },
     empresarial: { interes: 0.21, plazo: 10 },
     micro: { interes: 0.36, plazo: 1 },
   };
@@ -33,7 +33,7 @@
 </script>
 
 
-<main class="mt-4 relative z-10">
+<main class="mt-4 relative z-10 ">
   <div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-12 relative">
 
     <!-- Fondo decorativo con pointer-events-none -->
@@ -85,7 +85,8 @@
           </div>
 
           <!-- Botón calcular -->
-          <button on:click={calcularPrestamo} class="mt-4 bg-verde hover:bg-amarillo text-white hover:text-verde py-2 px-4 rounded">
+
+          <button on:click={calcularPrestamo} class="mt-4 bg-verde hover:bg-amarillo  text-white hover:text-verde py-2 px-4 rounded">
             Calcular Préstamo
           </button>
         {/if}

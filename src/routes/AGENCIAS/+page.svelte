@@ -9,7 +9,8 @@
       direccion: "Centro Comercial Metrocentro, 1er nivel, locales 25 y 26F, San Salvador",
       contacto: "+503 2260-0142",
       image: "/images/AGENCIAimg/metro.png",
-      mapUrl: "https://www.google.com/maps/embed?...",
+            mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.47567698167!2d-89.10184023103614!3d13.716721668674305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6337fcd02f8869%3A0x61685bbe7bf3d208!2sCaja%20De%20Credito%20San%20Martin!5e1!3m2!1ses!2ssv!4v1748548329354!5m2!1ses!2ssv",
+
     },
     {
       name: "AGENCIA UNICENTRO ALTA VISTA",
@@ -17,7 +18,7 @@
       direccion: "Unicentro Altavista, locales 7F y 8F, San Bartolo Ilopango",
       contacto: "+503 2299-7279",
       image: "/images/AGENCIAimg/alta.jpg",
-      mapUrl: "https://www.google.com/maps/embed?...",
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.47567698167!2d-89.10184023103614!3d13.716721668674305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6337fcd02f8869%3A0x61685bbe7bf3d208!2sCaja%20De%20Credito%20San%20Martin!5e1!3m2!1ses!2ssv!4v1748548329354!5m2!1ses!2ssv",
     }
   ];
 

@@ -169,7 +169,7 @@
 
 <section class=" bg-gray-100 rounded-lg ">
   <h2 class="text-2xl font-semibold text-verde mb-6 text-center">
-    OFICINA CENTRAL CAJA CREDITO SAN MARTIN
+    OFICINA CENTRAL CAJA DE CREDITO SAN MARTIN
   </h2>
   <p class="text-verde mb-4">
     Nuestra <strong>Oficina Central</strong> se encuentra en la siguiente dirección:

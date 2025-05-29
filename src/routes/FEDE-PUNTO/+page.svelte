@@ -14,7 +14,7 @@
       direccion: "Col. Providencia, 4ª Av. Sur Local 1, San Martin S.S",
       contacto: "+503 2258-7504",
       image: "/images/FEDEPUNTOSimg/KARIM.png",
-      mapUrl: "https://www.google.com/maps/embed?pb=..."
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.234609421893!2d-89.0553766!3d13.735181299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63462cd8ed7a33%3A0xef454fa71ebaf225!2sCaja%20de%20Cr%C3%A9dito%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745263847126!5m2!1ses!2ssv"
     },
     {
       name: "Ferretería Santísima Trinidad",
@@ -22,7 +22,7 @@
       direccion: "5ª Barrio Concepción, 5ª Calle Oriente Casa 2, San Bartolomé Perulapía",
       contacto: "+503 2379-1154",
       image: "/images/FEDEPUNTOSimg/TRINIDAD.png",
-      mapUrl: "https://www.google.com/maps/embed?pb=..."
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.234609421893!2d-89.0553766!3d13.735181299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63462cd8ed7a33%3A0xef454fa71ebaf225!2sCaja%20de%20Cr%C3%A9dito%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745263847126!5m2!1ses!2ssv"
     },
     {
       name: "Peluquería Social",
@@ -30,7 +30,7 @@
       direccion: "Primera Av. Sur N°5, frente al Parque Central, San Martín, San Salvador",
       contacto: "+503 2258-1616",
       image: "/images/FEDEPUNTOSimg/SOCIAL.png",
-      mapUrl: "https://www.google.com/maps/embed?pb=..."
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.234609421893!2d-89.0553766!3d13.735181299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63462cd8ed7a33%3A0xef454fa71ebaf225!2sCaja%20de%20Cr%C3%A9dito%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745263847126!5m2!1ses!2ssv"
     },
     {
       name: "Tienda El Mercadito",
@@ -38,7 +38,7 @@
       direccion: "Proyecto Santa Teresa, San Martín, San Salvador.",
       contacto: "+503 7358-3569",
       image: "/images/FEDEPUNTOSimg/MERCADITO.png",
-      mapUrl: "https://www.google.com/maps/embed?pb=..."
+      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.234609421893!2d-89.0553766!3d13.735181299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63462cd8ed7a33%3A0xef454fa71ebaf225!2sCaja%20de%20Cr%C3%A9dito%20de%20San%20Mart%C3%ADn!5e1!3m2!1ses!2ssv!4v1745263847126!5m2!1ses!2ssv"
     },
   ];
 
