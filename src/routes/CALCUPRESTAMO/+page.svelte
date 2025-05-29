@@ -109,7 +109,7 @@
           <p class="text-sm text-gray-600">Para más información, contáctanos al:</p>
           <p class="font-medium text-gray-800">📞 Teléfono: 2528-5000</p>
           <p class="font-medium text-verde">
-            💬 WhatsApp: <a href="https://wa.me/50370000000" target="_blank" class="underline">Enviar mensaje</a>
+            💬 WhatsApp: <a href="https://wa.me/50377424422" target="_blank" class="underline">Enviar mensaje</a>
           </p>
           <button on:click={cerrarModal} class="mt-4 bg-verde hover:bg-amarillo text-white py-2 px-4 rounded">
             Cerrar
