@@ -41,7 +41,7 @@
   };
 </script>
 
-<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md  z-50 ">
+<nav class="fixed top-0 left-0 w-full bg-white text-verde shadow-md  z-50 "> 
   <div class="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex-shrink-0">

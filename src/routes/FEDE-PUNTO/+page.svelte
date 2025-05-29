@@ -6,6 +6,7 @@
   export const prerender = true;
 
 
+
   export let locations = [
     {
       name: "Tienda y venta de cereales KARIM",

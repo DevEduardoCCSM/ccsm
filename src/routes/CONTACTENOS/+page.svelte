@@ -60,7 +60,7 @@
 
 <main class="mt-3">
 
-    <BotonFlotante />
+  
   
     <div class="min-h-screen bg-gradient-to-b from-[var(--color-amarillo)] to-[var(--color-verde)] flex flex-col justify-start items-center py-20">
       <!-- Fondo dividido en 3 colores -->

@@ -1,13 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { navigating } from '$app/stores';
-  import "../tailwind.css";
-
-  import BotonFlotante from '$lib/BotonFlotante.svelte';
   import SafeLink from '$lib/SafeLink.svelte';
-  import Loader from '$lib/Loader.svelte';
-
-  export const prerender = true;
 
   let showModal = false;
   let currentIndex = 0;
@@ -16,38 +9,28 @@
   const images = [
     {
       src: '/images/CARUSELimg/caja2.jpg',
-      alt: '',
       text: '72 AÑOS CONTIGO!',
       overlay: '/images/CARUSELimg/TIN.png',
-      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/FEDEBANKING.jpg',
-      alt: '',
       text: 'NUESTROS SERVICIOS PARA TI!',
       overlay: '/images/CARUSELimg/FEDEMOV.png',
-      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/TARJETAS DE CREDITO.jpg',
-      alt: '',
       text: 'DISFRUTA, VIVE Y GANA CON NUESTRAS TARJETAS!',
       overlay: '/images/CARUSELimg/FEDEPUNTOS.png',
-      textAnimation: '',
     },
     {
       src: '/images/CARUSELimg/CUENTA-INFANTIL.webp',
-      alt: '',
       text: 'ACOMPAÑANDOTE SIEMPRE...',
       overlay: '/images/CARUSELimg/MANITA.png',
-      textAnimation: '',
     }
   ];
 
-  // Mostrar modal si no ha sido mostrado en esta sesión
   onMount(() => {
-    const alreadyShown = sessionStorage.getItem('modalShown');
-    if (!alreadyShown) {
+    if (!sessionStorage.getItem('modalShown')) {
       showModal = true;
     }
 
@@ -62,9 +45,10 @@
     showModal = false;
     sessionStorage.setItem('modalShown', 'true');
   };
-
-  $: isNavigating = $navigating !== null;
 </script>
+
+
+
 
 {#if showModal}
   <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[1000] p-4 sm:p-6 overflow-y-auto">
@@ -116,9 +100,7 @@
 {/if}
 
 
-{#if isNavigating}
-  <Loader />
-{/if}
+
 
 <slot />
 
