@@ -160,7 +160,7 @@
 
     <!-- Botón para regresar a la página anterior -->
     <div class="flex justify-center mt-10">
-      <button on:click={() => history.back()} class="bg-amarillo text-verde hover:bg-verde hover:text-green-50 px-6 py-2 rounded-md text-lg font-semibold transition-all hover:scale-105">
+      <button on:click={() => history.back()} class="bg-verde text-white hover:bg-amarillo hover:text-verde px-6 py-2 rounded-md text-lg font-semibold transition-all hover:scale-105">
         <i class="fas fa-arrow-left mr-2"></i> REGRESAR
       </button>
     </div>

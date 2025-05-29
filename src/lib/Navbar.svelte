@@ -137,7 +137,7 @@
           {title}
         </button>
         {#if openDropdown === title}
-          <ul class="absolute mt-0 w-56 bg-white border shadow-lg rounded right-0 z-50">
+          <ul class="absolute mt- w-56 bg-white border shadow-lg rounded right-0 z-50">
             {#each dropdownItems[title] as item}
               <li class="border-b last:border-none">
                 <a href={item.href} class="block px-4 py-2 hover:bg-green-100 hover:text-green-700">

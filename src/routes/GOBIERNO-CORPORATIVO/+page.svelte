@@ -155,9 +155,9 @@
     style="max-height: {mostrarMemoriaAnual ? '300px' : '0px'}"
   >
     <div class="flex flex-col items-center space-y-1 py-2">
-      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+      <a href="/pdfs/memoria2021.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
       <a href="/pdfs/memoria 2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
-      <a href="/pdfs/memoria2024.pdf" target="_blank" class="hover:underline text-base">Año 2024</a>
+    
     </div>
   </div>
 </div>
@@ -181,9 +181,9 @@
       <table class="min-w-full border border-verde">
         <thead class="bg-verde text-white">
           <tr>
-            <th class="border border-green-700 px-4 py-2 text-left">Nombre</th>
-            <th class="border border-green-700 px-4 py-2 text-left">Cargo</th>
-            <th class="border border-green-700 px-4 py-2 text-left">Período</th>
+            <th class="border border-green-700 px-4 py-2 text-center">Nombre</th>
+            <th class="border border-green-700 px-4 py-2 text-center">Cargo</th>
+            <th class="border border-green-700 px-4 py-2 text-center">Período</th>
           </tr>
         </thead>
         <tbody>
@@ -229,8 +229,8 @@
       <table class="min-w-full border border-verde">
         <thead class="bg-verde text-white">
           <tr>
-            <th class="border border-green-700 px-4 py-2 text-left">Nombre</th>
-            <th class="border border-green-700 px-4 py-2 text-left">Cargo</th>
+            <th class="border border-green-700 px-4 py-2 text-center">Nombre</th>
+            <th class="border border-green-700 px-4 py-2 text-center">Cargo</th>
           </tr>
         </thead>
         <tbody>
