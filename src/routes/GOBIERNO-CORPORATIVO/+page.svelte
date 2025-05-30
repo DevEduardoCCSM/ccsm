@@ -155,7 +155,7 @@
     style="max-height: {mostrarMemoriaAnual ? '300px' : '0px'}"
   >
     <div class="flex flex-col items-center space-y-1 py-2">
-      <a href="/pdfs/memoria2021.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
+      <a href="/pdfs/MEMORIA 2020.pdf" target="_blank" class="hover:underline text-base">Año 2020</a>
       <a href="/pdfs/memoria 2021.pdf" target="_blank" class="hover:underline text-base">Año 2021</a>
     
     </div>
