@@ -4,7 +4,6 @@
 
   let showModal = false;
   let currentIndex = 0;
-  let bannerVisible = true;
 
   const images = [
     {
@@ -47,13 +46,9 @@
   };
 </script>
 
-
-
-
 {#if showModal}
   <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[1000] p-4 sm:p-6 overflow-y-auto">
     <div class="bg-white rounded-lg shadow-lg w-full max-w-4xl relative p-4 sm:p-6">
-      <!-- Botón de cierre -->
       <div class="flex justify-end">
         <button 
           on:click={closeModal} 
@@ -63,11 +58,7 @@
         </button>
       </div>
 
-      <!-- Contenedor de tarjetas -->
       <div class="grid grid-cols-1 md:grid-cols-1 gap-4 sm:gap-6 mt-4">
-       
-
-        <!-- Tarjeta 2 -->
         <div class="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col items-center border-4 border-amarillo">
           <img 
             src="/images/MODALimg/estafa.jpg" 
@@ -86,7 +77,6 @@
         </div>
       </div>
 
-      <!-- Botón de cerrar -->
       <div class="mt-6 text-center">
         <button 
           class="px-6 py-2 bg-verde text-white rounded hover:bg-amarillo hover:text-verde text-sm sm:text-base" 
@@ -99,72 +89,53 @@
   </div>
 {/if}
 
-
-
-
-<slot />
-
-
-
-
 <main class="mt-16">
-    <!-- Aquí va el contenido de la página -->
-  </main>
+  <!-- Contenido de la página -->
+</main>
 
 <svelte:head> 
-  
-    <link rel="icon" href="/fede.ico" />
- 
-
+  <link rel="icon" href="/fede.ico" />
 </svelte:head>
 
- 
+<!-- Banner rotativo -->
+<div class="relative w-full h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
+  {#each images as image, index}
+    <div
+      class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+      class:opacity-0={index !== currentIndex}
+      class:opacity-100={index === currentIndex}
+    >
+      <img
+        src={image.src}
+        alt={image.text}
+        class="w-full h-full object-cover"
+        style="object-position: center 20%;"
+      />
 
-<!-- Contenido principal -->
+      <div class="absolute inset-0 bg-gradient-to-l from-transparent to-verde/80 z-10"></div>
 
-{#if bannerVisible}
-  <div class="relative w-full h-[250px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg shadow-lg">
-    {#each images as image, index}
-      <div
-        class="absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out"
-        class:opacity-0={index !== currentIndex}
-        class:opacity-100={index === currentIndex}
-      >
-        <img
-          src={image.src}
-          alt={image.alt}
-          loading="lazy"
-          class="w-full h-full object-cover"
-          style="object-position: center 20%;"
-        />
-        <div class="absolute inset-0 bg-gradient-to-l from-transparent to-verde/90 z-10"></div>
-
+      <div class="absolute left-6 sm:left-10 top-1/2 -translate-y-1/2 flex flex-col items-start z-20">
         {#if image.overlay}
-  <img
-    src={image.overlay}
-    alt=""
-    loading="lazy"
-    class="absolute left-40 top-1/2 -translate-y-1/2 w-40 h-40 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain z-20 shadow-white border-white rounded-lg"
-  />
-{/if}
-
-
-        <div class="absolute left-4 bottom-10 md:left-20 md:bottom-20 z-30 max-w-xs md:max-w-md">
-          <h2 class={`text-lg md:text-2xl lg:text-4xl font-bold text-amarillo  ${image.textAnimation}`}>
-            {image.text}
-          </h2>
+          <img
+            src={image.overlay}
+            alt=""
+            class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain mb-2"
+          />
+        {/if}
+        <div class="text-amarillo text-base sm:text-lg md:text-2xl font-bold drop-shadow-md max-w-xs sm:max-w-sm">
+          {image.text}
         </div>
       </div>
-    {/each}
-  </div>
-{/if}
-
+    </div>
+  {/each}
+</div>
 
 <div class="relative pt-0">
   <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-verde">
     <div style="width:100%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-verde"></div>
   </div>
 </div>
+
 
 
 <!-- BIENVENIDOS A NUESTRO SITIO WEB CCSM -->
